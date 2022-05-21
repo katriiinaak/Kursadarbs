@@ -350,3 +350,28 @@ Lietotājs ievadīja1
 Lietotājs ievadīja2
 Piemērotāka disciplīna tavam zirgam ir kross!
 Vai ir nepieciešams izstrādāt treniņu plānu mēnesim un atbilstošo barību?
+Sveiki! Atbildot uz jautājumiem, uzzināsi, vai disciplīna, kuru šobrīd trenējies, der tavam zirgam!
+1.Kādā discpilīnā šobrīd trenējaties?
+Lietotājs ievadīja2
+2.Vai tavs zirgs izbauda disciplīnu, kurā trenējaties?
+Lietotājs ievadīja1
+3.Kādā šķirnes grupā ir tavs zirgs?
+Lietotājs ievadīja2
+4.Cik vecs ir zirgs?
+Lietotājs ievadīja1
+5.Zirga dzimums?
+Lietotājs ievadīja1
+6.Kāda ir zirga ķermeņa masa?
+Lietotājs ievadīja1
+7.Kāds ir zirga raksturs?
+Lietotājs ievadīja1
+8.Kā tavs zirgs uzvedas aplokā?
+Lietotājs ievadīja3
+9.Kādā ātrumā tavam zirgam patīk piedalīties treniņos, sacensībās?
+Lietotājs ievadīja3
+10.Vai zirgs baidās no priekšmetiem, lietām vai citiem zirgiem?
+Lietotājs ievadīja1
+11.Kāda veida treniņus jūsu zirgs vairāk izbauda?
+Lietotājs ievadīja3
+Piemērotāka disciplīna tavam zirgam ir konkūrs!
+Vai ir nepieciešams izstrādāt treniņu plānu mēnesim un atbilstošo barību?
