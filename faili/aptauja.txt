@@ -95,3 +95,129 @@ Lietotājs ievadīja3
 Lietotājs ievadīja2
 11.Kāda veida treniņus jūsu zirgs vairāk izbauda?
 Lietotājs ievadīja1
+Sveiki! Atbildot uz jautājumiem, uzzināsi, vai disciplīna, kuru šobrīd trenējies, der tavam zirgam?
+1.Kādā discpilīnā šobrīd trenējaties?
+Sveiki! Atbildot uz jautājumiem, uzzināsi, vai disciplīna, kuru šobrīd trenējies, der tavam zirgam?
+1.Kādā discpilīnā šobrīd trenējaties?
+Lietotājs ievadīja1
+2.Vai tavs zirgs izbauda disciplīnu, kurā trenējaties?
+Lietotājs ievadīja3
+3.Kādā šķirnes grupā ir tavs zirgs?
+Lietotājs ievadīja2
+4.Cik vecs ir zirgs?
+Lietotājs ievadīja2
+5.Zirga dzimums?
+Lietotājs ievadīja1
+6.Kāda ir zirga ķermeņa masa?
+Lietotājs ievadīja1
+7.Kāds ir zirga raksturs?
+Lietotājs ievadīja1
+8.Kā tavs zirgs uzvedas aplokā?
+Lietotājs ievadīja2
+9.Kādā ātrumā tavam zirgam patīk piedalīties treniņos, sacensībās?
+Lietotājs ievadīja1
+10.Vai zirgs baidās no priekšmetiem, lietām vai citiem zirgiem?
+Lietotājs ievadīja1
+11.Kāda veida treniņus jūsu zirgs vairāk izbauda?
+Lietotājs ievadīja3
+Vai ir nepieciešams izstrādāt treniņu plānu mēnesim?
+Sveiki! Atbildot uz jautājumiem, uzzināsi, vai disciplīna, kuru šobrīd trenējies, der tavam zirgam?
+1.Kādā discpilīnā šobrīd trenējaties?
+Lietotājs ievadīja3
+2.Vai tavs zirgs izbauda disciplīnu, kurā trenējaties?
+Lietotājs ievadīja3
+3.Kādā šķirnes grupā ir tavs zirgs?
+Lietotājs ievadīja2
+4.Cik vecs ir zirgs?
+Lietotājs ievadīja1
+5.Zirga dzimums?
+Lietotājs ievadīja2
+6.Kāda ir zirga ķermeņa masa?
+Lietotājs ievadīja2
+7.Kāds ir zirga raksturs?
+Lietotājs ievadīja3
+8.Kā tavs zirgs uzvedas aplokā?
+Lietotājs ievadīja3
+9.Kādā ātrumā tavam zirgam patīk piedalīties treniņos, sacensībās?
+Lietotājs ievadīja2
+10.Vai zirgs baidās no priekšmetiem, lietām vai citiem zirgiem?
+Lietotājs ievadīja3
+11.Kāda veida treniņus jūsu zirgs vairāk izbauda?
+Lietotājs ievadīja3
+Piemērotāka disciplīna tavam zirgam ir kross!
+Vai ir nepieciešams izstrādāt treniņu plānu mēnesim?
+Sveiki! Atbildot uz jautājumiem, uzzināsi, vai disciplīna, kuru šobrīd trenējies, der tavam zirgam?
+1.Kādā discpilīnā šobrīd trenējaties?
+Lietotājs ievadīja1
+2.Vai tavs zirgs izbauda disciplīnu, kurā trenējaties?
+Lietotājs ievadīja1
+3.Kādā šķirnes grupā ir tavs zirgs?
+Lietotājs ievadīja1
+4.Cik vecs ir zirgs?
+Lietotājs ievadīja1
+5.Zirga dzimums?
+Lietotājs ievadīja1
+6.Kāda ir zirga ķermeņa masa?
+Lietotājs ievadīja2
+7.Kāds ir zirga raksturs?
+Lietotājs ievadīja3
+8.Kā tavs zirgs uzvedas aplokā?
+Lietotājs ievadīja3
+9.Kādā ātrumā tavam zirgam patīk piedalīties treniņos, sacensībās?
+Lietotājs ievadīja2
+10.Vai zirgs baidās no priekšmetiem, lietām vai citiem zirgiem?
+Lietotājs ievadīja1
+11.Kāda veida treniņus jūsu zirgs vairāk izbauda?
+Lietotājs ievadīja1
+Piemērotāka disciplīna tavam zirgam ir konkūrs!
+Vai ir nepieciešams izstrādāt treniņu plānu mēnesim?
+Sveiki! Atbildot uz jautājumiem, uzzināsi, vai disciplīna, kuru šobrīd trenējies, der tavam zirgam?
+1.Kādā discpilīnā šobrīd trenējaties?
+Lietotājs ievadīja3
+2.Vai tavs zirgs izbauda disciplīnu, kurā trenējaties?
+Lietotājs ievadīja2
+3.Kādā šķirnes grupā ir tavs zirgs?
+Lietotājs ievadīja1
+4.Cik vecs ir zirgs?
+Lietotājs ievadīja2
+5.Zirga dzimums?
+Lietotājs ievadīja1
+6.Kāda ir zirga ķermeņa masa?
+Lietotājs ievadīja1
+7.Kāds ir zirga raksturs?
+Lietotājs ievadīja1
+8.Kā tavs zirgs uzvedas aplokā?
+Lietotājs ievadīja1
+9.Kādā ātrumā tavam zirgam patīk piedalīties treniņos, sacensībās?
+Lietotājs ievadīja1
+10.Vai zirgs baidās no priekšmetiem, lietām vai citiem zirgiem?
+Lietotājs ievadīja2
+11.Kāda veida treniņus jūsu zirgs vairāk izbauda?
+Lietotājs ievadīja1
+Piemērotāka disciplīna tavam zirgam ir konkūrs!
+Vai ir nepieciešams izstrādāt treniņu plānu mēnesim?
+Sveiki! Atbildot uz jautājumiem, uzzināsi, vai disciplīna, kuru šobrīd trenējies, der tavam zirgam?
+1.Kādā discpilīnā šobrīd trenējaties?
+Lietotājs ievadīja3
+2.Vai tavs zirgs izbauda disciplīnu, kurā trenējaties?
+Lietotājs ievadīja2
+3.Kādā šķirnes grupā ir tavs zirgs?
+Lietotājs ievadīja1
+4.Cik vecs ir zirgs?
+Lietotājs ievadīja3
+5.Zirga dzimums?
+Lietotājs ievadīja3
+6.Kāda ir zirga ķermeņa masa?
+Lietotājs ievadīja3
+7.Kāds ir zirga raksturs?
+Lietotājs ievadīja2
+8.Kā tavs zirgs uzvedas aplokā?
+Lietotājs ievadīja3
+9.Kādā ātrumā tavam zirgam patīk piedalīties treniņos, sacensībās?
+Lietotājs ievadīja1
+10.Vai zirgs baidās no priekšmetiem, lietām vai citiem zirgiem?
+Lietotājs ievadīja2
+11.Kāda veida treniņus jūsu zirgs vairāk izbauda?
+Lietotājs ievadīja3
+Piemērotāka disciplīna tavam zirgam ir kross!
+Vai ir nepieciešams izstrādāt treniņu plānu mēnesim?

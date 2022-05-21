@@ -90,6 +90,11 @@ for i in range(12):
     f.write("8.Kā tavs zirgs uzvedas aplokā?" + "\n")
     b = int(input("Atbilžu varianti: 1-Pastaigājas, lēkā pa aploku; 2-Atkārto kustības, ko esi mācījis; 3-Nepārtraukti skrien: "))
     f.write("Lietotājs ievadīja" + str(b) + "\n")
+    try:
+        print(b)
+    except:
+        print("Atbildes numurs, ko ievadījāt, nav definēts!")
+        f.write("Atbildes numurs, ko ievadījāt, nav definēts!" + "\n")
     if b == 1:
         ko += 1
     elif b == 2:
@@ -131,13 +136,145 @@ for i in range(12):
 
 
 
+if ie < ko > kr:
+    print("Piemērotāka disciplīna tavam zirgam ir konkūrs!")
+    f.write("Piemērotāka disciplīna tavam zirgam ir konkūrs!" + "\n")
+elif kr < ie > ko:
+    print("Piemērotāka disciplīna tavam zirgam ir iejāde!")
+    f.write("Piemērotāka disciplīna tavam zirgam ir iejāde!" + "\n")
+else:
+    print("Piemērotāka disciplīna tavam zirgam ir kross!")
+    f.write("Piemērotāka disciplīna tavam zirgam ir kross!" + "\n")
 
 
 
 
-print("Vai ir nepieciešams izstrādāt treniņu plānu mēnesim?")
+print("Vai ir nepieciešams izstrādāt treniņu plānu divām nedēļām?")
 f.write("Vai ir nepieciešams izstrādāt treniņu plānu mēnesim?" + "\n")
 y = int(input("Atbilžu varianti: 1-Jā; 2-Nē: " ))
+
+rindas, kolonas = 3, 8
+kon = [[None] * kolonas for i in range(rindas)]
+
+kon[0][0] = " "
+kon[0][1] = "Pirmdiena"
+kon[0][2] = "Ordiena"
+kon[0][3] = "Trešdiena"
+kon[0][4] = "Ceturtdiena"
+kon[0][5] = "Piektdiena"
+kon[0][6] = "Sestdiena"
+kon[0][7] = "Svētdiena"
+kon[1][0] = "Pirmā nedēļa"
+kon[1][1] = "Hordošana 30min"
+kon[1][2] = "Rikšu slodze"
+kon[1][3] = "Vingrojumi"
+kon[1][4] = "Lekšana"
+kon[1][5] = "Lēkšu slodze"
+kon[1][6] = "Soļu slodze"
+kon[1][7] = "Atpūta"
+kon[2][0] = "Otrā nedēļa"
+kon[2][1] = "Rikšu slodze"
+kon[2][2] = "Lēkši, figūras"
+kon[2][3] = "Vingrojumi"
+kon[2][4] = "Locīšanās"
+kon[2][5] = "Lekšana"
+kon[2][6] = "Lēkšu slodze"
+kon[2][7] = "Maršruts"
+"""
+for i in range(rindas):
+    for j in range(kolonas):
+        print(kon[i][j], end="\t")
+"""
+rindas, kolonas = 3, 8
+iej = [[None] * kolonas for i in range(rindas)]
+
+iej[0][0] = " "
+iej[0][1] = "Pirmdiena"
+iej[0][2] = "Ordiena"
+iej[0][3] = "Trešdiena"
+iej[0][4] = "Ceturtdiena"
+iej[0][5] = "Piektdiena"
+iej[0][6] = "Sestdiena"
+iej[0][7] = "Svētdiena"
+iej[1][0] = "Pirmā nedēļa"
+iej[1][1] = "Soļošana"
+iej[1][2] = "Hordošana 20min"
+iej[1][3] = "Rikši, locīšanās"
+iej[1][4] = "Kārtiņas, locīšanās"
+iej[1][5] = "Lēkšu slodze"
+iej[1][6] = "Lēkši taisnās līnijās"
+iej[1][7] = "Gaitas un pārejas"
+iej[2][0] = "Otrā nedēļa"
+iej[2][1] = "Atpūta"
+iej[2][2] = "Hordošana 45min"
+iej[2][3] = "Rikši, lēkši, locīšanās"
+iej[2][4] = "Taisnas līnijas"
+iej[2][5] = "Kārtiņas un uzdevumi"
+iej[2][6] = "Locīšanās"
+iej[2][7] = "PAstaiga apvidū"
+
+
+
+rindas, kolonas = 3, 8
+kro = [[None] * kolonas for i in range(rindas)]
+
+kro[0][0] = " "
+kro[0][1] = "Pirmdiena"
+kro[0][2] = "Ordiena"
+kro[0][3] = "Trešdiena"
+kro[0][4] = "Ceturtdiena"
+kro[0][5] = "Piektdiena"
+kro[0][6] = "Sestdiena"
+kro[0][7] = "Svētdiena"
+kro[1][0] = "Pirmā nedēļa"
+kro[1][1] = "Hordošana 20min"
+kro[1][2] = "Viegls skrējiens 3km"
+kro[1][3] = "Pamata treniņš"
+kro[1][4] = "Viegls skrējiens, lecieni"
+kro[1][5] = "Locīšanās"
+kro[1][6] = "Izturības skrējiens"
+kro[1][7] = "Hordošana 20min"
+kro[2][0] = "Otrā nedēļa"
+kro[2][1] = "Atpūta"
+kro[2][2] = "Viegls skrējiens 3km"
+kro[2][3] = "Viegls skrējiens, lecieni"
+kro[2][4] = "Locīšanās, lecieni"
+kro[2][5] = "Hordošana 20min"
+kro[2][6] = "Viegls skrējiens, lecieni"
+kro[2][7] = "Izturības skrējiens"
+
+
+
+
+
+
+
+
+
+
+if y == 2:
+    print("Paldies, ka izpildījāt šo aptauju!")
+    f.write("Paldies, ka izpildījāt šo aptauju!" + "\n")
+elif y == 1:
+    if ie < ko > kr:
+        for i in range(rindas):
+            for j in range(kolonas):
+                print(kon[i][j], end="\t")
+        print()
+
+    elif kr < ie > ko:
+        for i in range(rindas):
+            for j in range(kolonas):
+                print(iej[i][j], end="\t")
+        print()
+    else:
+        for i in range(rindas):
+            for j in range(kolonas):
+                print(kro[i][j], end="\t")
+
+
+
+
 
 
 
