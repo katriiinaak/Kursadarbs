@@ -1,5 +1,7 @@
 """
-1. Atbildēt uz jautājumiem par savu zirgu
+1. Atbildēt uz jautājumiem par savu zirgu.
+2.Testa beigās uzzinās, kura disciplīna ir piemērotāka tavam zirgam.
+3. Atkarībā no testa rezultāta, atbilstošajai disciplīnai, tiek piedāvāts izstrādāt treniņu plānu un atbilstošu barību. 
 
 """
 MAPE = "faili/" #uztaisu mainīgo, kas ir fails
