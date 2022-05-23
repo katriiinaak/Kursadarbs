@@ -4,7 +4,7 @@
 """
 MAPE = "faili/" #uztaisu mainīgo, kas ir fails
 fails = MAPE + "aptauja.txt" #secība, kā nokļūstt aptaujā
-f = open(fails, 'a', encoding="UTF-8") #definē f, pievieno aptaujā to, ko vajag
+f = open(fails, 'w', encoding="UTF-8") #definē f, pievieno aptaujā to, ko vajag
 
 print() #izveido atstrpi, lai skaistāk
 print("Sveiki! Atbildot uz jautājumiem, uzzināsi, kura disciplīna ir piemērotāka tavam zirgam!")
@@ -162,7 +162,7 @@ kon[0][1] = "Pirmdiena"
 kon[0][2] = "Ordiena"
 kon[0][3] = "Trešdiena"
 kon[0][4] = "Ceturtdiena"
-kon[0][5] = "Piektdiena"
+kon[0][5] = "Piektdiena "
 kon[0][6] = "Sestdiena"
 kon[0][7] = "Svētdiena"
 kon[1][0] = "Pirmā nedēļa"
@@ -211,7 +211,7 @@ iej[2][3] = "Rikši, lēkši, locīšanās"
 iej[2][4] = "Taisnas līnijas"
 iej[2][5] = "Kārtiņas un uzdevumi"
 iej[2][6] = "Locīšanās"
-iej[2][7] = "PAstaiga apvidū"
+iej[2][7] = "Pastaiga apvidū"
 
 
 
@@ -264,7 +264,8 @@ elif y == 1: #ja atbildēja 'jā', tad izvada atbilstošo sarakstu
                 print(kon[i][j], end="\t")
             print()
         print()
-        print(konk, end=" ")
+        from tabulate import tabulate
+        print(tabulate(konk, end=" "))
 
     elif kr < ie > ko:
         for i in range(rindas):
@@ -272,14 +273,16 @@ elif y == 1: #ja atbildēja 'jā', tad izvada atbilstošo sarakstu
                 print(iej[i][j], end="\t")
             print()
         print()
-        print(ieja, end=" ")
+        from tabulate import tabulate
+        print(tabulate(ieja, end=" "))
     else:
         for i in range(rindas):
             for j in range(kolonas):
                 print(kro[i][j], end="\t")
             print()
         print()
-        print(kros, end=" ")
+        from tabulate import tabulate
+        print(tabulate(kros, end=" "))
 
 
 
