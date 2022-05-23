@@ -1,11 +1,16 @@
 """
 1. Atbildēt uz jautājumiem par savu zirgu
-
 """
+MAPE = "faili/"
+fails = MAPE + "aptauja.txt"
+f = open(fails, 'a', encoding="UTF-8")
 MAPE = "faili/" #uztaisu mainīgo, kas ir fails
 fails = MAPE + "aptauja.txt" #secība, kā nokļūstt aptaujā
-f = open(fails, 'w', encoding="UTF-8") #definē f, pievieno aptaujā to, ko vajag
+f = open(fails, 'a', encoding="UTF-8") #definē f, pievieno aptaujā to, ko vajag
 
+print()
+print("Sveiki! Atbildot uz jautājumiem, uzzināsi, vai disciplīna, kuru šobrīd trenējies, der tavam zirgam?")
+f.write("Sveiki! Atbildot uz jautājumiem, uzzināsi, vai disciplīna, kuru šobrīd trenējies, der tavam zirgam?" + "\n")
 print() #izveido atstrpi, lai skaistāk
 print("Sveiki! Atbildot uz jautājumiem, uzzināsi, kura disciplīna ir piemērotāka tavam zirgam!")
 f.write("Sveiki! Atbildot uz jautājumiem, uzzināsi, vai disciplīna, kuru šobrīd trenējies, der tavam zirgam!" + "\n")
@@ -14,10 +19,14 @@ print()
 ko = 0 #mainīgie, kas skaitīs atbildes
 ie = 0
 kr = 0
-
+   
 for i in range(12):    
     print("1.Kādā disciplīnā šobrīd trenējaties?")
-    f.write("1.Kādā discpilīnā šobrīd trenējaties?" + "\n") #pievieno tekstu uz aptaujas failu (\n-pievieno jaunu teikumu nākamajā rindiņā)
+    f.write("1.Kādā discpilīnā šobrīd trenējaties?" + "\n")
+    k = int(input("Atbilžu varianti: 1-Konkūrs; 2-Iejāde; 3-Kross: "))
+    f.write("Lietotājs ievadīja" + str(k) + "\n")
+    if k == 1:
+      f.write("1.Kādā discpilīnā šobrīd trenējaties?" + "\n") #pievieno tekstu uz aptaujas failu (\n-pievieno jaunu teikumu nākamajā rindiņā)
     k = int(input("Atbilžu varianti: 1-Konkūrs; 2-Iejāde; 3-Kross: ")) #paprasa aptaujas veicējam ievadīt atbildi
     f.write("Lietotājs ievadīja" + str(k) + "\n") #str(k)-datu tips, kas parāda tekstu, ko ievadīja lietotājs
     if k == 1: #skaita atbildes
@@ -64,10 +73,8 @@ for i in range(12):
         ko += 1
     elif l == 2:
         ie += 1
-    else:
-        kr += 1
-    print("6.Kāda ir zirga ķermeņa masa?")
-    f.write("6.Kāda ir zirga ķermeņa masa?" + "\n")
+@@ -70,27 +70,27 @@
+        f.write("6.Kāda ir zirga ķermeņa masa?" + "\n")
     c = int(input("Atbilžu varianti: 1-Ideāli sportiska forma, skaisti muskuļains; 2-Tievs, garām kājām; 3-Apaļīgs, masīvs, lieli muskuļi: "))
     f.write("Lietotājs ievadīja" + str(c) + "\n")
     if c == 1:
@@ -90,6 +97,7 @@ for i in range(12):
     f.write("8.Kā tavs zirgs uzvedas aplokā?" + "\n")
     b = int(input("Atbilžu varianti: 1-Pastaigājas, lēkā pa aploku; 2-Atkārto kustības, ko esi mācījis; 3-Nepārtraukti skrien: "))
     f.write("Lietotājs ievadīja" + str(b) + "\n")
+    try:
     try: #nodrošina datu ievades pareizību
         print(b)
     except:
@@ -131,10 +139,13 @@ for i in range(12):
         ie += 1
     else:
         kr += 1
+    #if
+    break
     break #pabeidz ciklu
 
 
 
+if ie < ko > kr:
 if ie < ko > kr: #nosaka, kuru atbilžu variantu skaitļu bija visvairāk
     print("Piemērotāka disciplīna tavam zirgam ir konkūrs!")
     f.write("Piemērotāka disciplīna tavam zirgam ir konkūrs!" + "\n")
@@ -147,11 +158,14 @@ else:
 
 
 
-
+print("Vai ir nepieciešams izstrādāt treniņu plānu divām nedēļām?")
+f.write("Vai ir nepieciešams izstrādāt treniņu plānu mēnesim?" + "\n")
 print("Vai ir nepieciešams izstrādāt treniņu plānu divām nedēļām un atbilstošo barību?")
 f.write("Vai ir nepieciešams izstrādāt treniņu plānu mēnesim un atbilstošo barību?" + "\n")
 y = int(input("Atbilžu varianti: 1-Jā; 2-Nē: " ))
 
+rindas, kolonas = 3, 8
+kon = [[None] * kolonas for i in range(rindas)]
 konk = ["Ieteicamā barība: Augstas kvalitātes siens, granulas, musli, vitamīni-olbaltumvielas, kalcijs, fosfors. "]
 
 rindas, kolonas = 3, 8 #parāda cik rindu un kolonu būs sarakstā
@@ -162,7 +176,7 @@ kon[0][1] = "Pirmdiena"
 kon[0][2] = "Ordiena"
 kon[0][3] = "Trešdiena"
 kon[0][4] = "Ceturtdiena"
-kon[0][5] = "Piektdiena "
+kon[0][5] = "Piektdiena"
 kon[0][6] = "Sestdiena"
 kon[0][7] = "Svētdiena"
 kon[1][0] = "Pirmā nedēļa"
@@ -181,6 +195,11 @@ kon[2][4] = "Locīšanās"
 kon[2][5] = "Lekšana"
 kon[2][6] = "Lēkšu slodze"
 kon[2][7] = "Maršruts"
+"""
+for i in range(rindas):
+    for j in range(kolonas):
+        print(kon[i][j], end="\t")
+"""
 
 
 ieja = ["Ieteicamā barība: Mitrinātas auzas, augstas kvalitātes siens, papildbarība+vitamīni. "]
@@ -211,7 +230,7 @@ iej[2][3] = "Rikši, lēkši, locīšanās"
 iej[2][4] = "Taisnas līnijas"
 iej[2][5] = "Kārtiņas un uzdevumi"
 iej[2][6] = "Locīšanās"
-iej[2][7] = "Pastaiga apvidū"
+iej[2][7] = "PAstaiga apvidū"
 
 
 
@@ -247,16 +266,13 @@ kro[2][7] = "Izturības skrējiens"
 
 
 
-
-
-
-
-
-
-
+if y == 2:
 if y == 2: #ja atbildēja 'nē', tad pabeidz aptauju
     print("Paldies, ka izpildījāt šo aptauju!")
     f.write("Paldies, ka izpildījāt šo aptauju!" + "\n")
+elif y == 1:
+    if ie < ko > kr:
+        for i in range(rindas):
 elif y == 1: #ja atbildēja 'jā', tad izvada atbilstošo sarakstu
     if ie < ko > kr: 
         for i in range(rindas): #sarakstu izvada kā tabulu
@@ -280,13 +296,5 @@ elif y == 1: #ja atbildēja 'jā', tad izvada atbilstošo sarakstu
             print()
         print()
         print(kros, end=" ")
-
-
-
-
-
-
-
-
 
 
