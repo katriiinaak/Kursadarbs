@@ -11,12 +11,14 @@ t = int(input("Varianti: 1-saskaitīšana; 2-atņemšana; 3-reizināšana; 4-dal
 import funkcijas
 
 
-if t == 1:
+if t == 1: #1.variants
     r = funkcijas.saskaitit(v, k)
     print(f"{v} + {k} = {r}")
-# elif t == 2:
-#     print(f"{v} - {k} = ", funkcijas.atnemt(v, k))
-# elif t == 3:
-#     print(f"{v} * {k} = ", funkcijas.reizinat(v, k))
-# else:
-#     print(f"{v} / {k} = ", funkcijas.dalit(v, k))
+elif t == 2: #2.variants
+    print(f"{v} - {k} = ", funkcijas.atnemt(v, k))
+elif t == 3:
+    print(f"{v} * {k} = ", funkcijas.reizinat(v, k))
+else:
+   print(f"{v} / {k} = ", funkcijas.dalit(v, k))
+
+print(u"\u00A9katrina 11A JEPVG 2022")
