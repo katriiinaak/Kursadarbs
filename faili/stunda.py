@@ -3,5 +3,5 @@
 from random import random
 
 s = int(input("Ievadi, cik daudz skaitļu vēlatie, lai izvada: "))
-g = int(input("Kāfds būs maksimālais skaitļa garums? "))
+g = int(input("Kāds būs maksimālais skaitļa garums? "))
 
