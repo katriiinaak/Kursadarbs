@@ -2,12 +2,12 @@
 Vārdnīcas
 """
 suns = {
-    "Šķirne" : "Laika",
-    "Krāsa" : "Melna",
-    "Svars" : "27 kg",
-    "Vecums" : "3 gadi",
-    "Vārds" : "Čaika",
-    "Dzimums" : "Zēns"
+    "Šķirne" : "jauktenis",
+    "Krāsa" : "melna",
+    "Svars" : "13 kg",
+    "Vecums" : "8 gadi",
+    "Vārds" : "Regijs",
+    "Dzimums" : "zēns"
     }
 
 print(suns)
@@ -23,4 +23,7 @@ for key, value in suns.items():
 for key in suns.keys():
     print(f"{key}")
 
-print(f"Manu suni sauc ")
+print(f"Manu suni sauc {suns['Vārds']}, viņš ir {suns['Dzimums']}. Regija šķirne ir {suns['Šķirne']} um viņa krāsa ir {suns['Krāsa']}. {suns['Vārds']} sver {suns['Svars']}. ")
+
+s = suns.copy()
+
