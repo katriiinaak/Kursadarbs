@@ -25,5 +25,5 @@ for key in suns.keys():
 
 print(f"Manu suni sauc {suns['Vārds']}, viņš ir {suns['Dzimums']}. Regija šķirne ir {suns['Šķirne']} um viņa krāsa ir {suns['Krāsa']}. {suns['Vārds']} sver {suns['Svars']}. ")
 
-s = suns.copy()
+
 
