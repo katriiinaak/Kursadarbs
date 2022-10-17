@@ -27,3 +27,8 @@ vārdnīca = {
 for key, value in vārdnīca.items():
     print(f"{key} - {value}")
 
+for key in vārdnīca.keys():
+    print(f"{key}")
+
+for value in vārdnīca.values():
+    print(f"{value}")
