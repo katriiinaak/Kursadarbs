@@ -25,12 +25,21 @@ vārdnīca = {
 
 
 print("No kuras valodas vēlaties tulkot?")
-k = int(input("Atbilžu varianti: 1-Latviešu; 2-Angļu: " ))
+c = int(input("Atbilžu varianti: 1-Latviešu; 2-Angļu: " ))
+if c == 1:
+    print("Dotie vārdi: ") #ja atbilde bija 1, tad izmet latv. val vardus
+    for key in vārdnīca.keys():
+        print(f"{key}")
+else:
+    print("Dotie vārdi: ") #ja atbilde bija 2, tad izmet anglu val. vardus
+    for value in vārdnīca.values():
+        print(f"{value}")
 
 
+"""
 print("Dotie vārdi: ")
-for key in vārdnīca.keys():
-    print(f"{key}")
+for value in vārdnīca.values():
+    print(f"{value}")
 
 
 
@@ -49,3 +58,4 @@ if k == 1:
     print("Paldies, ka izmantojāt tulkotāju! ")
 else:
     print("Paldies, ka izmantojāt tulkotāju! ")
+"""
