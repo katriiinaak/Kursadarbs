@@ -14,7 +14,7 @@ print(suns)
 #print(type(suns))
 print(suns["Šķirne"])
 print(suns.keys())
-print(suns.get("Širne"))
+print(suns.get("Šķirne"))
 print("\n")
 
 for key, value in suns.items():

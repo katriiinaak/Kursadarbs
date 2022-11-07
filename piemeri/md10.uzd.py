@@ -10,6 +10,6 @@ for i in range(1,n+1):
 print(sk)
 #visu skaitļu viējo aritmētisko
 
-        print("Skaitļu vidējais aritmētiskais ir")
-        print("Lielākais skaitlis ir,",sk[n-1],"bet mazākais skaitlis ir")
-        print(f"Sarakstā ir {a} pāra skaitļi un {sk} nepāra skaitļi.")
+print("Skaitļu vidējais aritmētiskais ir")
+print("Lielākais skaitlis ir,",sk[n-1],"bet mazākais skaitlis ir")
+print(f"Sarakstā ir {a} pāra skaitļi un {sk} nepāra skaitļi.")
