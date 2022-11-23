@@ -291,4 +291,3 @@ elif y == 1: #ja atbildēja 'jā', tad izvada atbilstošo sarakstu
 
 
 
-
