@@ -250,12 +250,11 @@ kro[2][7] = "Izturības skrējiens"
 
 """
 zirgs = {
-    "Vārds" : "jauktenis",
-    "Vecums" : "melna",
-    "" : "13 kg",
-    "Vecums" : "8 gadi",
-    "Vārds" : "Regijs",
-    "Dzimums" : "zēns"
+    "Vārds" : "Latte",
+    "Vecums" : "3 gadi",
+    "Šķirne" : "Ls",
+    "Krāsa" : "Brūna",
+    "Skausta augstums" : "162"
     }
 
 """
@@ -289,8 +288,7 @@ elif y == 1: #ja atbildēja 'jā', tad izvada atbilstošo sarakstu
             print()
         print()
         print(kros, end=" ")
- 
-
+        
 
 
 
