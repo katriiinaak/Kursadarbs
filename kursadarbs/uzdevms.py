@@ -2,6 +2,7 @@
 1. Atbildēt uz jautājumiem par savu zirgu.
 2.Testa beigās uzzinās, kura disciplīna ir piemērotāka tavam zirgam.
 3. Atkarībā no testa rezultāta, atbilstošajai disciplīnai, tiek piedāvāts izstrādāt treniņu plānu un atbilstošu barību. 
+tiek piedavats treninu zirgs atbilstošajai disciplīnai: zirga apraksts
 
 """
 MAPE = "faili/" #uztaisu mainīgo, kas ir fails
@@ -247,11 +248,17 @@ kro[2][5] = "Hordošana 20min"
 kro[2][6] = "Viegls skrējiens, lecieni"
 kro[2][7] = "Izturības skrējiens"
 
+"""
+zirgs = {
+    "Vārds" : "jauktenis",
+    "Vecums" : "melna",
+    "" : "13 kg",
+    "Vecums" : "8 gadi",
+    "Vārds" : "Regijs",
+    "Dzimums" : "zēns"
+    }
 
-
-
-
-
+"""
 
 
 
