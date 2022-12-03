@@ -249,6 +249,9 @@ kro[2][6] = "Viegls skrējiens, lecieni"
 kro[2][7] = "Izturības skrējiens"
 
 """
+print("Vai Jums būs nepieciešams vēl viens treniņu zirgs?")
+o = int(input("Atbilžu varianti: 1-Jā; 2-Nē: " ))
+
 zirgs = {
     "Vārds" : "Latte",
     "Vecums" : "3 gadi",
@@ -257,6 +260,17 @@ zirgs = {
     "Skausta augstums" : "162"
     }
 
+bariba = {
+    "Auzas" : "Brokastīs un vakariņās",
+    "Siens" : "Brokastīs, pusdienās un vakariņās",
+    "Musli" : "Pusdienās",
+    "Vitamīni" : "Vakariņās",
+    }
+
+if o == 2: #ja atbildēja 'nē', tad pabeidz aptauju
+    print("Paldies, ka izpildījāt šo aptauju!")
+    f.write("Paldies, ka izpildījāt šo aptauju!" + "\n")
+elif o == 1: #ja atbildēja 'jā', tad izvada atbilstošo sarakstu
 """
 
 
