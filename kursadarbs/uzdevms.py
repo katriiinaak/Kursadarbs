@@ -288,7 +288,7 @@ zirgs = { #info par zirgu
 
 
 bariba = { #ēdināšanas grafiks
-    "Auzas" : "brokastīs un vakariņās",
+    "auzas" : "brokastīs un vakariņās",
     "siens" : "brokastīs, pusdienās un vakariņās",
     "musli" : "pusdienās",
     "vitamīni" : "Vakariņās",
@@ -302,15 +302,14 @@ if o == 2: #pabeidz aptauju
     print("Paldies, ka izpildījāt aptauju!")
 elif o == 1: #izvada aprakstu par zirgu un zirga ēdināšanas grafiku
     print(zirgs)
-    print(f"Ēdināšanas grafiks: Jādod {bariba['Auzas']}, {bariba['siens']}, {bariba['musli']} un {bariba['vitamīni']}. ")
+    print(f"Ēdināšanas grafiks: Jādod {bariba['auzas']}, {bariba['siens']}, {bariba['musli']} un {bariba['vitamīni']}. ")
 
+print()
 
-
-
-
-
-
-
-
-
-
+print("Vai vēlaties izpildīt aptauju vēlreiz?")
+x = int(input("Atbilžu varianti: 1-Jā; 2-Nē: " ))
+if x == 2:
+    print("Paldies!")
+elif x == 1: 
+    pass
+#while true break 
