@@ -2,8 +2,9 @@
 1. Atbildēt uz jautājumiem par savu zirgu.
 2.Testa beigās uzzinās, kura disciplīna ir piemērotāka tavam zirgam.
 3. Atkarībā no testa rezultāta, atbilstošajai disciplīnai, tiek piedāvāts izstrādāt treniņu plānu un atbilstošu barību. 
-
+tiek piedavats treninu zirgs atbilstošajai disciplīnai: zirga apraksts
 """
+
 MAPE = "faili/" #uztaisu mainīgo, kas ir fails
 fails = MAPE + "aptauja.txt" #secība, kā nokļūstt aptaujā
 f = open(fails, 'w', encoding="UTF-8") #definē f, pievieno aptaujā to, ko vajag
@@ -248,17 +249,9 @@ kro[2][6] = "Viegls skrējiens, lecieni"
 kro[2][7] = "Izturības skrējiens"
 
 
-
-
-
-
-
-
-
-
-if y == 2: #ja atbildēja 'nē', tad pabeidz aptauju
-    print("Paldies, ka izpildījāt šo aptauju!")
-    f.write("Paldies, ka izpildījāt šo aptauju!" + "\n")
+if y == 2: #ja atbildēja 'nē', tad uzdod vēl vienu jautājumu
+    print("Atbildiet uz pēdējo jautājumu!")
+    f.write("Atbildiet uz pēdējo jautājumu!" + "\n")
 elif y == 1: #ja atbildēja 'jā', tad izvada atbilstošo sarakstu
     if ie < ko > kr: 
         for i in range(rindas): #sarakstu izvada kā tabulu
@@ -282,12 +275,41 @@ elif y == 1: #ja atbildēja 'jā', tad izvada atbilstošo sarakstu
             print()
         print()
         print(kros, end=" ")
- 
 
 
 
+zirgs = { #info par zirgu
+    "Vārds" : "Latte",
+    "Vecums" : "3 gadi",
+    "Šķirne" : "Ls",
+    "Krāsa" : "Brūna",
+    "Skausta augstums" : "162"
+    }
 
 
+bariba = { #ēdināšanas grafiks
+    "auzas" : "brokastīs un vakariņās",
+    "siens" : "brokastīs, pusdienās un vakariņās",
+    "musli" : "pusdienās",
+    "vitamīni" : "Vakariņās",
+    }
 
+print()
 
+print("Vai Jums būs nepieciešams vēl viens treniņu zirgs?") #uzdod pēdējo jautājumu
+o = int(input("Atbilžu varianti: 1-Jā; 2-Nē: " ))
+if o == 2: #pabeidz aptauju
+    print("Paldies, ka izpildījāt aptauju!")
+elif o == 1: #izvada aprakstu par zirgu un zirga ēdināšanas grafiku
+    print(zirgs)
+    print(f"Ēdināšanas grafiks: Jādod {bariba['auzas']}, {bariba['siens']}, {bariba['musli']} un {bariba['vitamīni']}. ")
 
+print()
+
+print("Vai vēlaties izpildīt aptauju vēlreiz?")
+x = int(input("Atbilžu varianti: 1-Jā; 2-Nē: " ))
+if x == 2:
+    print("Paldies!")
+elif x == 1: 
+    pass
+#while true break 

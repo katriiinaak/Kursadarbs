@@ -25,5 +25,18 @@ for key in suns.keys():
 
 print(f"Manu suni sauc {suns['Vārds']}, viņš ir {suns['Dzimums']}. Regija šķirne ir {suns['Šķirne']} um viņa krāsa ir {suns['Krāsa']}. {suns['Vārds']} sver {suns['Svars']}. ")
 
+#print(bariba)
+#print(type(bariba))
+#print(bariba["Auzas"])
+#print(bariba.keys())
+#print(bariba.get("Auzas"))
+#print("\n")
+
+#for key, value in bariba.items():
+#    print(f"{key} - {value}")
+
+#for key in bariba.keys():
+#    print(f"{key}")
+
 
 
