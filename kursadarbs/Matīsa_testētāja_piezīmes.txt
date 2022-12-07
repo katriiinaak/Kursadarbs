@@ -1,0 +1,2 @@
+07.12.2022.
+kodam nav aizsardzības pret nepareizu datu ievadi, 1,2,3 vietā mierīgi varu ievadīt citus ciparus, nevar ievādit burtus, tas labi
