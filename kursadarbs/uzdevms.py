@@ -1,10 +1,12 @@
+import fukcijas
+
 """
 1. Atbildēt uz jautājumiem par savu zirgu.
 2.Testa beigās uzzinās, kura disciplīna ir piemērotāka tavam zirgam.
 3. Atkarībā no testa rezultāta, atbilstošajai disciplīnai, tiek piedāvāts izstrādāt treniņu plānu un atbilstošu barību. 
 tiek piedavats treninu zirgs atbilstošajai disciplīnai: zirga apraksts
-
 """
+
 MAPE = "faili/" #uztaisu mainīgo, kas ir fails
 fails = MAPE + "aptauja.txt" #secība, kā nokļūstt aptaujā
 f = open(fails, 'w', encoding="UTF-8") #definē f, pievieno aptaujā to, ko vajag
@@ -18,135 +20,143 @@ ko = 0 #mainīgie, kas skaitīs atbildes
 ie = 0
 kr = 0
 
-for i in range(12):    
-    print("1.Kādā disciplīnā šobrīd trenējaties?")
-    f.write("1.Kādā discpilīnā šobrīd trenējaties?" + "\n") #pievieno tekstu uz aptaujas failu (\n-pievieno jaunu teikumu nākamajā rindiņā)
-    k = int(input("Atbilžu varianti: 1-Konkūrs; 2-Iejāde; 3-Kross: ")) #paprasa aptaujas veicējam ievadīt atbildi
-    f.write("Lietotājs ievadīja" + str(k) + "\n") #str(k)-datu tips, kas parāda tekstu, ko ievadīja lietotājs
-    if k == 1: #skaita atbildes
-        ko += 1
-    elif k == 2:
-        ie += 1
-    else:
-        kr += 1
-    print("2.Vai tavs zirgs izbauda disciplīnu, kurā trenējaties?")
-    f.write("2.Vai tavs zirgs izbauda disciplīnu, kurā trenējaties?" + "\n")
-    d = int(input("Atbildžu varianti: 1-Jā; 2-Nē; 3-Nezinu: "))
-    f.write("Lietotājs ievadīja" + str(d) + "\n")
-    if d == 1:
-        ko += 1
-    elif d == 2:
-        ie += 1
-    else:
-        kr += 1
-    print("3.Kādā šķirnes grupā ir tavs zirgs?")
-    f.write("3.Kādā šķirnes grupā ir tavs zirgs?" + "\n")
-    e = int(input("Atbilžu varianti: 1-Siltasiņu(piem.Hanoveras, Holšteinas, Latvijas); 2-Aukstasiņu(piem.Frīzs, Šīres); 3-Karstasiņu(piem.Arābs, tīrasiņu): "))
-    f.write("Lietotājs ievadīja" + str(e) + "\n")
-    if e == 1:
-        ko += 1
-    elif e == 2:
-        ie += 1
-    else:
-        kr += 1
-    print("4.Cik vecs ir zirgs?")
-    f.write("4.Cik vecs ir zirgs?" + "\n")
-    m = int(input("Atbilžu varianti: 1-3-7 gadi; 2-7-14 gadi; 3-14+ gadi: "))
-    f.write("Lietotājs ievadīja" + str(m) + "\n")
-    if m == 1:
-        ko += 1
-    elif m == 2:
-        ie += 1
-    else:
-        kr += 1
-    print("5.Zirga dzimums?")
-    f.write("5.Zirga dzimums?" + "\n")
-    l = int(input("Atbilžu varianti: 1-Ķēve; 2-Kastrāts; 3-Ērzelis: "))
-    f.write("Lietotājs ievadīja" + str(l) + "\n")
-    if l == 1:
-        ko += 1
-    elif l == 2:
-        ie += 1
-    else:
-        kr += 1
-    print("6.Kāda ir zirga ķermeņa masa?")
-    f.write("6.Kāda ir zirga ķermeņa masa?" + "\n")
-    c = int(input("Atbilžu varianti: 1-Ideāli sportiska forma, skaisti muskuļains; 2-Tievs, garām kājām; 3-Apaļīgs, masīvs, lieli muskuļi: "))
-    f.write("Lietotājs ievadīja" + str(c) + "\n")
-    if c == 1:
-        ko += 1
-    elif c == 2:
-        ie += 1
-    else:
-        kr += 1
-    print("7.Kāds ir zirga raksturs?")
-    f.write("7.Kāds ir zirga raksturs?" + "\n")
-    r = int(input("Atbilžu varianti: 1-Traks, nepacietīgs, sportisks; 2-Nosvērts, mierīgs, gudrs, graciozs; 3-Ātrs, enerģisks, veikls: "))
-    f.write("Lietotājs ievadīja" + str(r) + "\n")
-    if r == 1:
-        ko += 1
-    elif r == 2:
-        ie += 1
-    else:
-        kr += 1
-    print("8.Kā tavs zirgs uzvedas aplokā?")
-    f.write("8.Kā tavs zirgs uzvedas aplokā?" + "\n")
-    b = int(input("Atbilžu varianti: 1-Pastaigājas, lēkā pa aploku; 2-Atkārto kustības, ko esi mācījis; 3-Nepārtraukti skrien: "))
-    f.write("Lietotājs ievadīja" + str(b) + "\n")
-    try: #nodrošina datu ievades pareizību
-        print(b)
-    except:
-        print("Atbildes numurs, ko ievadījāt, nav definēts!")
-        f.write("Atbildes numurs, ko ievadījāt, nav definēts!" + "\n")
-    if b == 1:
-        ko += 1
-    elif b == 2:
-        ie += 1
-    else:
-        kr += 1
-    print("9.Kādā ātrumā tavam zirgam patīk piedalīties treniņos, sacensībās?")
-    f.write("9.Kādā ātrumā tavam zirgam patīk piedalīties treniņos, sacensībās?" + "\n")
-    s = int(input("Atbilžu varianti: 1-Vidēji; 2-Pielāgojas man; 3-Ātri: "))
-    f.write("Lietotājs ievadīja" + str(s) + "\n")
-    if s == 1:
-        ko += 1
-    elif s == 2:
-        ie += 1
-    else:
-        kr += 1
-    print("10.Vai zirgs baidās no priekšmetiem, lietām vai citiem zirgiem?")
-    f.write("10.Vai zirgs baidās no priekšmetiem, lietām vai citiem zirgiem?" + "\n")
-    h = int(input("Atbilžu varianti: 1-Dažreiz; 2-Jā; 3-Nē: "))
-    f.write("Lietotājs ievadīja" + str(h) + "\n")
-    if h == 1:
-        ko += 1
-    elif h == 2:
-        ie += 1
-    else:
-        kr += 1
-    print("11.Kāda veida treniņus jūsu zirgs vairāk izbauda?")
-    f.write("11.Kāda veida treniņus jūsu zirgs vairāk izbauda?" + "\n")
-    n = int(input("Atbilžu varianti: 1-Lekšana; 2-Figūru izpilde; 3-Izturības treniņi: "))
-    f.write("Lietotājs ievadīja" + str(n) + "\n")
-    if n == 1:
-        ko += 1
-    elif n == 2:
-        ie += 1
-    else:
-        kr += 1
-    break #pabeidz ciklu
+
+def funkcija1(ko, ie, kr):
+    for i in range(12):    
+        print("1.Kādā disciplīnā šobrīd trenējaties?")
+        f.write("1.Kādā discpilīnā šobrīd trenējaties?" + "\n") #pievieno tekstu uz aptaujas failu (\n-pievieno jaunu teikumu nākamajā rindiņā)
+        k = int(input("Atbilžu varianti: 1-Konkūrs; 2-Iejāde; 3-Kross: ")) #paprasa aptaujas veicējam ievadīt atbildi
+        f.write("Lietotājs ievadīja" + str(k) + "\n") #str(k)-datu tips, kas parāda tekstu, ko ievadīja lietotājs
+        if k == 1: #skaita atbildes
+            ko += 1
+        elif k == 2:
+            ie += 1
+        else:
+            kr += 1
+        print("2.Vai tavs zirgs izbauda disciplīnu, kurā trenējaties?")
+        f.write("2.Vai tavs zirgs izbauda disciplīnu, kurā trenējaties?" + "\n")
+        d = int(input("Atbildžu varianti: 1-Jā; 2-Nē; 3-Nezinu: "))
+        f.write("Lietotājs ievadīja" + str(d) + "\n")
+        if d == 1:
+            ko += 1
+        elif d == 2:
+            ie += 1
+        else:
+            kr += 1
+        print("3.Kādā šķirnes grupā ir tavs zirgs?")
+        f.write("3.Kādā šķirnes grupā ir tavs zirgs?" + "\n")
+        e = int(input("Atbilžu varianti: 1-Siltasiņu(piem.Hanoveras, Holšteinas, Latvijas); 2-Aukstasiņu(piem.Frīzs, Šīres); 3-Karstasiņu(piem.Arābs, tīrasiņu): "))
+        f.write("Lietotājs ievadīja" + str(e) + "\n")
+        if e == 1:
+            ko += 1
+        elif e == 2:
+            ie += 1
+        else:
+            kr += 1
+        print("4.Cik vecs ir zirgs?")
+        f.write("4.Cik vecs ir zirgs?" + "\n")
+        m = int(input("Atbilžu varianti: 1-3-7 gadi; 2-7-14 gadi; 3-14+ gadi: "))
+        f.write("Lietotājs ievadīja" + str(m) + "\n")
+        if m == 1:
+            ko += 1
+        elif m == 2:
+            ie += 1
+        else:
+            kr += 1
+        print("5.Zirga dzimums?")
+        f.write("5.Zirga dzimums?" + "\n")
+        l = int(input("Atbilžu varianti: 1-Ķēve; 2-Kastrāts; 3-Ērzelis: "))
+        f.write("Lietotājs ievadīja" + str(l) + "\n")
+        if l == 1:
+            ko += 1
+        elif l == 2:
+            ie += 1
+        else:
+            kr += 1
+        print("6.Kāda ir zirga ķermeņa masa?")
+        f.write("6.Kāda ir zirga ķermeņa masa?" + "\n")
+        c = int(input("Atbilžu varianti: 1-Ideāli sportiska forma, skaisti muskuļains; 2-Tievs, garām kājām; 3-Apaļīgs, masīvs, lieli muskuļi: "))
+        f.write("Lietotājs ievadīja" + str(c) + "\n")
+        if c == 1:
+            ko += 1
+        elif c == 2:
+            ie += 1
+        else:
+            kr += 1
+        print("7.Kāds ir zirga raksturs?")
+        f.write("7.Kāds ir zirga raksturs?" + "\n")
+        r = int(input("Atbilžu varianti: 1-Traks, nepacietīgs, sportisks; 2-Nosvērts, mierīgs, gudrs, graciozs; 3-Ātrs, enerģisks, veikls: "))
+        f.write("Lietotājs ievadīja" + str(r) + "\n")
+        if r == 1:
+            ko += 1
+        elif r == 2:
+            ie += 1
+        else:
+            kr += 1
+        print("8.Kā tavs zirgs uzvedas aplokā?")
+        f.write("8.Kā tavs zirgs uzvedas aplokā?" + "\n")
+        b = int(input("Atbilžu varianti: 1-Pastaigājas, lēkā pa aploku; 2-Atkārto kustības, ko esi mācījis; 3-Nepārtraukti skrien: "))
+        f.write("Lietotājs ievadīja" + str(b) + "\n")
+        try: #nodrošina datu ievades pareizību
+            print(b)
+        except:
+            print("Atbildes numurs, ko ievadījāt, nav definēts!")
+            f.write("Atbildes numurs, ko ievadījāt, nav definēts!" + "\n")
+        if b == 1:
+            ko += 1
+        elif b == 2:
+            ie += 1
+        else:
+            kr += 1
+        print("9.Kādā ātrumā tavam zirgam patīk piedalīties treniņos, sacensībās?")
+        f.write("9.Kādā ātrumā tavam zirgam patīk piedalīties treniņos, sacensībās?" + "\n")
+        s = int(input("Atbilžu varianti: 1-Vidēji; 2-Pielāgojas man; 3-Ātri: "))
+        f.write("Lietotājs ievadīja" + str(s) + "\n")
+        if s == 1:
+            ko += 1
+        elif s == 2:
+            ie += 1
+        else:
+            kr += 1
+        print("10.Vai zirgs baidās no priekšmetiem, lietām vai citiem zirgiem?")
+        f.write("10.Vai zirgs baidās no priekšmetiem, lietām vai citiem zirgiem?" + "\n")
+        h = int(input("Atbilžu varianti: 1-Dažreiz; 2-Jā; 3-Nē: "))
+        f.write("Lietotājs ievadīja" + str(h) + "\n")
+        if h == 1:
+            ko += 1
+        elif h == 2:
+            ie += 1
+        else:
+            kr += 1
+        print("11.Kāda veida treniņus jūsu zirgs vairāk izbauda?")
+        f.write("11.Kāda veida treniņus jūsu zirgs vairāk izbauda?" + "\n")
+        n = int(input("Atbilžu varianti: 1-Lekšana; 2-Figūru izpilde; 3-Izturības treniņi: "))
+        f.write("Lietotājs ievadīja" + str(n) + "\n")
+        if n == 1:
+            ko += 1
+        elif n == 2:
+            ie += 1
+        else:
+            kr += 1
+        break #pabeidz ciklu
+
+
+funkcija1(ko, ie, kr)
 
 
 
-if ie < ko > kr: #nosaka, kuru atbilžu variantu skaitļu bija visvairāk
-    print("Piemērotāka disciplīna tavam zirgam ir konkūrs!")
-    f.write("Piemērotāka disciplīna tavam zirgam ir konkūrs!" + "\n")
-elif kr < ie > ko:
-    print("Piemērotāka disciplīna tavam zirgam ir iejāde!")
-    f.write("Piemērotāka disciplīna tavam zirgam ir iejāde!" + "\n")
-else:
-    print("Piemērotāka disciplīna tavam zirgam ir kross!")
-    f.write("Piemērotāka disciplīna tavam zirgam ir kross!" + "\n")
+def funkcija2():
+    if ie < ko > kr: #nosaka, kuru atbilžu variantu skaitļu bija visvairāk
+        print("Piemērotāka disciplīna tavam zirgam ir konkūrs!")
+        f.write("Piemērotāka disciplīna tavam zirgam ir konkūrs!" + "\n")
+    elif kr < ie > ko:
+        print("Piemērotāka disciplīna tavam zirgam ir iejāde!")
+        f.write("Piemērotāka disciplīna tavam zirgam ir iejāde!" + "\n")
+    else:
+        print("Piemērotāka disciplīna tavam zirgam ir kross!")
+        f.write("Piemērotāka disciplīna tavam zirgam ir kross!" + "\n")
+
+funkcija2()
 
 
 
@@ -248,11 +258,39 @@ kro[2][5] = "Hordošana 20min"
 kro[2][6] = "Viegls skrējiens, lecieni"
 kro[2][7] = "Izturības skrējiens"
 
-"""
-print("Vai Jums būs nepieciešams vēl viens treniņu zirgs?")
-o = int(input("Atbilžu varianti: 1-Jā; 2-Nē: " ))
 
-zirgs = {
+def funkcija3():
+    if y == 2: #ja atbildēja 'nē', tad uzdod vēl vienu jautājumu
+        print("Atbildiet uz pēdējo jautājumu!")
+        f.write("Atbildiet uz pēdējo jautājumu!" + "\n")
+    elif y == 1: #ja atbildēja 'jā', tad izvada atbilstošo sarakstu
+        if ie < ko > kr: 
+            for i in range(rindas): #sarakstu izvada kā tabulu
+                for j in range(kolonas):
+                    print(kon[i][j], end="\t")
+                print()
+            print()
+            print(konk, end=" ")
+
+        elif kr < ie > ko:
+            for i in range(rindas):
+                for j in range(kolonas):
+                    print(iej[i][j], end="\t")
+                print()
+            print()
+            print(ieja, end=" ")
+        else:
+            for i in range(rindas):
+                for j in range(kolonas):
+                    print(kro[i][j], end="\t")
+                print()
+            print()
+            print(kros, end=" ")
+
+funkcija3()
+
+
+zirgs = { #info par zirgu
     "Vārds" : "Latte",
     "Vecums" : "3 gadi",
     "Šķirne" : "Ls",
@@ -260,53 +298,30 @@ zirgs = {
     "Skausta augstums" : "162"
     }
 
-bariba = {
-    "Auzas" : "Brokastīs un vakariņās",
-    "Siens" : "Brokastīs, pusdienās un vakariņās",
-    "Musli" : "Pusdienās",
-    "Vitamīni" : "Vakariņās",
+
+bariba = { #ēdināšanas grafiks
+    "auzas" : "brokastīs un vakariņās",
+    "siens" : "brokastīs, pusdienās un vakariņās",
+    "musli" : "pusdienās",
+    "vitamīni" : "Vakariņās",
     }
 
-if o == 2: #ja atbildēja 'nē', tad pabeidz aptauju
-    print("Paldies, ka izpildījāt šo aptauju!")
-    f.write("Paldies, ka izpildījāt šo aptauju!" + "\n")
-elif o == 1: #ja atbildēja 'jā', tad izvada atbilstošo sarakstu
-"""
+print()
 
+print("Vai Jums būs nepieciešams vēl viens treniņu zirgs?") #uzdod pēdējo jautājumu
+o = int(input("Atbilžu varianti: 1-Jā; 2-Nē: " ))
+if o == 2: #pabeidz aptauju
+    print("Paldies, ka izpildījāt aptauju!")
+elif o == 1: #izvada aprakstu par zirgu un zirga ēdināšanas grafiku
+    print(zirgs)
+    print(f"Ēdināšanas grafiks: Jādod {bariba['auzas']}, {bariba['siens']}, {bariba['musli']} un {bariba['vitamīni']}. ")
 
+print()
 
-
-if y == 2: #ja atbildēja 'nē', tad pabeidz aptauju
-    print("Paldies, ka izpildījāt šo aptauju!")
-    f.write("Paldies, ka izpildījāt šo aptauju!" + "\n")
-elif y == 1: #ja atbildēja 'jā', tad izvada atbilstošo sarakstu
-    if ie < ko > kr: 
-        for i in range(rindas): #sarakstu izvada kā tabulu
-            for j in range(kolonas):
-                print(kon[i][j], end="\t")
-            print()
-        print()
-        print(konk, end=" ")
-
-    elif kr < ie > ko:
-        for i in range(rindas):
-            for j in range(kolonas):
-                print(iej[i][j], end="\t")
-            print()
-        print()
-        print(ieja, end=" ")
-    else:
-        for i in range(rindas):
-            for j in range(kolonas):
-                print(kro[i][j], end="\t")
-            print()
-        print()
-        print(kros, end=" ")
-        
-
-
-
-
-
-
-
+print("Vai vēlaties izpildīt aptauju vēlreiz?")
+x = int(input("Atbilžu varianti: 1-Jā; 2-Nē: " ))
+if x == 2:
+    print("Paldies!")
+elif x == 1: 
+    pass
+#while true break 
