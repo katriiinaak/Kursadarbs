@@ -12,6 +12,9 @@ fails = MAPE + "aptauja.txt" #secība, kā nokļūstt aptaujā
 f = open(fails, 'w', encoding="UTF-8") #definē f, pievieno aptaujā to, ko vajag
 
 print() #izveido atstrpi, lai skaistāk
+tuple = ("'Tests par zirgu'")
+print(tuple)
+print()
 print("Sveiki! Atbildot uz jautājumiem, uzzināsi, kura disciplīna ir piemērotāka tavam zirgam!")
 f.write("Sveiki! Atbildot uz jautājumiem, uzzināsi, vai disciplīna, kuru šobrīd trenējies, der tavam zirgam!" + "\n")
 print()
@@ -165,7 +168,12 @@ print("Vai ir nepieciešams izstrādāt treniņu plānu divām nedēļām un atb
 f.write("Vai ir nepieciešams izstrādāt treniņu plānu mēnesim un atbilstošo barību?" + "\n")
 y = int(input("Atbilžu varianti: 1-Jā; 2-Nē: " ))
 
-konk = ["Ieteicamā barība: Augstas kvalitātes siens, granulas, musli, vitamīni-olbaltumvielas, kalcijs, fosfors. "]
+konk = {"Ieteicamā barība: Augstas kvalitātes siens, granulas, musli, vitamīni-olbaltumvielas, kalcijs, fosfors. "}
+magn= ["Brokastīs pievieno magniju."]
+
+konk.update(magn)
+
+print(konk)
 
 rindas, kolonas = 3, 8 #parāda cik rindu un kolonu būs sarakstā
 kon = [[None] * kolonas for i in range(rindas)] #uztaisa tukšu tabulu, lai pēctam ievadītu datus tajā
@@ -196,7 +204,13 @@ kon[2][6] = "Lēkšu slodze"
 kon[2][7] = "Maršruts"
 
 
-ieja = ["Ieteicamā barība: Mitrinātas auzas, augstas kvalitātes siens, papildbarība+vitamīni. "]
+ieja = {"Ieteicamā barība: Mitrinātas auzas, augstas kvalitātes siens, papildbarība+vitamīni. "}
+musli= ["Pusdienās pievieno musli."]
+
+ieja.update(musli)
+
+print(ieja)
+
 
 rindas, kolonas = 3, 8
 iej = [[None] * kolonas for i in range(rindas)]
@@ -228,7 +242,14 @@ iej[2][7] = "Pastaiga apvidū"
 
 
 
-kros = ["Ieteicamā barība: Granulas, augstas kvalitātes siens, zaļbarība+vitamīni. "]
+kros = {"Ieteicamā barība: Granulas, augstas kvalitātes siens, zaļbarība+vitamīni. "}
+mus= ["Brokastīs pievieno musli."]
+
+kros.update(mus)
+
+print(kros)
+
+
 
 rindas, kolonas = 3, 8
 kro = [[None] * kolonas for i in range(rindas)]
@@ -311,17 +332,42 @@ print()
 print("Vai Jums būs nepieciešams vēl viens treniņu zirgs?") #uzdod pēdējo jautājumu
 o = int(input("Atbilžu varianti: 1-Jā; 2-Nē: " ))
 if o == 2: #pabeidz aptauju
-    print("Paldies, ka izpildījāt aptauju!")
+    print()
 elif o == 1: #izvada aprakstu par zirgu un zirga ēdināšanas grafiku
     print(zirgs)
     print(f"Ēdināšanas grafiks: Jādod {bariba['auzas']}, {bariba['siens']}, {bariba['musli']} un {bariba['vitamīni']}. ")
 
 print()
 
+import random #loterija 
+n=int(input("Cik skaitļus ievadīsim?:"))
+sk=[]
+p=0
+k=0
+for i in range(1,n+1):
+    a=random.randrange(1,100)
+    sk.append(a)
+if a%2==0:
+    p+=1
+else:
+    k+=1
+    print(sk)
+    print(f"Sarakstā ir {p} pāra skaitļi un {k} nepāra skaitļi.")
+if p>k:
+    print("Sarakstā ir vairāk pāra skaitļu.")
+elif p==k:
+    print("Sarakstā ir vienāds skaits pāra un nepāra skaitļu.")
+else:
+    print("Sarakstā ir vairāk nepāra skaitļu.")
+
+
+print()
+
+
 print("Vai vēlaties izpildīt aptauju vēlreiz?")
 x = int(input("Atbilžu varianti: 1-Jā; 2-Nē: " ))
 if x == 2:
-    print("Paldies!")
+    print("Paldies, ka izpildījāt aptauju!")
 elif x == 1: 
     pass
 #while true break 

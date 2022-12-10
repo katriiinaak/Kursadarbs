@@ -1,6 +1,6 @@
-"""
- 4. Kārlim ir m lati. Viņš vēlas nopirkt n kg konfektes par c EUR/kg. Vai viņam pietiks naudas?
 
+#4. Kārlim ir m lati. Viņš vēlas nopirkt n kg konfektes par c EUR/kg. Vai viņam pietiks naudas?
+"""
 m = float(input("Ievadi cik naudas ir Kārlim? "))
 n = float(input("Cik kg konfekšu pirks Kārlis? "))
 c = float(input("Cik maksā 1 kg konfekšu ko pirks Kārlis? "))
