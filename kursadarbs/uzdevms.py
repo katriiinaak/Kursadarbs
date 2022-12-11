@@ -174,7 +174,7 @@ def main():
 
     funkcija1(ko, ie, kr)
 
-
+    print()
 
     def funkcija2():
         if ie < ko > kr: #nosaka, kuru atbilžu variantu skaitļu bija visvairāk
@@ -198,11 +198,13 @@ def main():
     f.write("Lietotājs ievadīja" + str(y) + "\n")
 
     konk = {"Ieteicamā barība: Augstas kvalitātes siens, granulas, musli, vitamīni-olbaltumvielas, kalcijs, fosfors. "}
-    magn= ["Brokastīs pievieno magniju."]
+    musli = ["Brokastīs pievieno musli."]
 
-    konk.update(magn)
+    konk.update(musli)
 
     print(konk)
+
+    
 
     rindas, kolonas = 3, 8 #parāda cik rindu un kolonu būs sarakstā
     kon = [[None] * kolonas for i in range(rindas)] #uztaisa tukšu tabulu, lai pēctam ievadītu datus tajā
@@ -234,9 +236,9 @@ def main():
 
 
     ieja = {"Ieteicamā barība: Mitrinātas auzas, augstas kvalitātes siens, papildbarība+vitamīni. "}
-    musli= ["Pusdienās pievieno musli."]
+    muslim = ["Pusdienās pievieno musli."]
 
-    ieja.update(musli)
+    ieja.update(muslim)
 
     print(ieja)
 
@@ -272,10 +274,10 @@ def main():
 
 
     kros = {"Ieteicamā barība: Granulas, augstas kvalitātes siens, zaļbarība+vitamīni. "}
-    mus= ["Brokastīs pievieno musli."]
-
-    kros.update(mus)
-
+    auzas = ["Pusdienās pievieno auzas."]
+    
+    kros.update(auzas)
+    
     print(kros)
 
 
