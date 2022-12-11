@@ -316,7 +316,7 @@ def main():
 
     def funkcija3():
         if y == 2: #ja atbildēja 'nē', tad uzdod vēl vienu jautājumu
-            print("Atbildiet uz vē vienu jautājumu!")
+            print("Atbildiet uz vēl vienu jautājumu!")
             f.write("Atbildiet uz vēl vienu jautājumu!" + "\n")
         elif y == 1: #ja atbildēja 'jā', tad izvada atbilstošo sarakstu
             if ie < ko > kr: 
@@ -371,6 +371,21 @@ def main():
         print(zirgs)
         print(f"Ēdināšanas grafiks: Jādod auzas {bariba['auzas']}, siens {bariba['siens']}, musli {bariba['musli']} un vitamīni {bariba['vitamīni']}. ")
 
+    print()
+
+    print("Jums ir iespēja laimēt loterijā. Noteikumi: programma ģenerē random skaitļus, līdz kamēr tas ir 7. Ja izvada 5 skaitļus un vairāk, tad Jūs laimējat zirgu gardumus! Ja izvada 4 skaitļus un mazāk, tad diemžēl neko nelaimējāt. ")
+    
+    print()
+    
+    import random
+
+    x = random.randint(0,10)
+    y = 7
+    while x != y:
+        print(x)   #izprintē random skaitli
+        x = random.randint(0,10)  #izvēlas jaunus skaitļus līdz kamēr tas ir 7
+
+    print("Tika atrasts {0}.  Ja pēc noteikumiem laimējāt balvu, tad attiecīgi sazināsimies ar Jums caur e-pastu.".format(y))
 
     print()
 
