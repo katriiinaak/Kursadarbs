@@ -34,15 +34,14 @@ def main():
             k = int(input("Atbilžu varianti: 1-Konkūrs; 2-Iejāde; 3-Kross: ")) #paprasa aptaujas veicējam ievadīt atbildi
             f.write("Lietotājs ievadīja" + str(k) + "\n") #str(k)-datu tips, kas parāda tekstu, ko ievadīja lietotājs
             if k == 1: #skaita atbildes
-                    ko += 1
+                ko += 1
             elif k == 2:
-                    ie += 1
+                ie += 1
             else:
-                    kr += 1
+                kr += 1
 
             print()
-            #if len(k = int) >3:
-            #print("Šī atbilde neder, ievadiet atbildi no dotajiem! ")
+           
                    
             print("2.Vai tavs zirgs izbauda disciplīnu, kurā trenējaties?")
             f.write("2.Vai tavs zirgs izbauda disciplīnu, kurā trenējaties?" + "\n")
@@ -371,30 +370,6 @@ def main():
     elif o == 1: #izvada aprakstu par zirgu un zirga ēdināšanas grafiku
         print(zirgs)
         print(f"Ēdināšanas grafiks: Jādod auzas {bariba['auzas']}, siens {bariba['siens']}, musli {bariba['musli']} un vitamīni {bariba['vitamīni']}. ")
-        
-
-    print()
-
-    import random #loterija 
-    n=int(input("Cik skaitļus ievadīsim?:"))
-    sk=[]
-    p=0
-    k=0
-    for i in range(1,n+1):
-        a=random.randrange(1,100)
-        sk.append(a)
-    if a%2==0:
-        p+=1
-    else:
-        k+=1
-        print(sk)
-        print(f"Sarakstā ir {p} pāra skaitļi un {k} nepāra skaitļi.")
-    if p>k:
-        print("Sarakstā ir vairāk pāra skaitļu.")
-    elif p==k:
-        print("Sarakstā ir vienāds skaits pāra un nepāra skaitļu.")
-    else:
-        print("Sarakstā ir vairāk nepāra skaitļu.")
 
 
     print()
