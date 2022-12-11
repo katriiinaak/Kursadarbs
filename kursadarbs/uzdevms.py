@@ -176,7 +176,7 @@ def main():
 
     print()
 
-    def funkcija2():
+    def funkcija2(ko, ie, kr):
         if ie < ko > kr: #nosaka, kuru atbilžu variantu skaitļu bija visvairāk
                     print("Piemērotāka disciplīna tavam zirgam ir konkūrs!")
                     f.write("Piemērotāka disciplīna tavam zirgam ir konkūrs!" + "\n")
@@ -187,7 +187,7 @@ def main():
                     print("Piemērotāka disciplīna tavam zirgam ir kross!")
                     f.write("Piemērotāka disciplīna tavam zirgam ir kross!" + "\n")
 
-    funkcija2()
+    funkcija2(ko, ie, kr)
 
     print()
 
@@ -365,8 +365,10 @@ def main():
 
     print("Vai Jums būs nepieciešams vēl viens treniņu zirgs?") 
     f.write("Vai Jums būs nepieciešams vēl viens treniņu zirgs?" + "\n")
-    o = int(input("Atbilžu varianti: 1-Jā; 2-Nē: " ))
+    o =input("Atbilžu variants 1 Jā vai 2 Nē")
+    o =int(o)
     f.write("Lietotājs ievadīja" + str(o) + "\n")
+    print("Šeit ir o",o)
     if o == 2: 
         print()
     elif o == 1: #izvada aprakstu par zirgu un zirga ēdināšanas grafiku
