@@ -1,10 +1,5 @@
 import fukcijas
 
-"""
-1. Atbildēt uz jautājumiem par savu zirgu.
-2. Testa beigās uzzinās, kura disciplīna ir piemērotāka tavam zirgam.
-3. Atkarībā no testa rezultāta, atbilstošajai disciplīnai, tiek piedāvāts izstrādāt treniņu plānu un atbilstošu barību. 
-"""
 
 def main():
     
@@ -33,25 +28,25 @@ def main():
             k = int(input("Atbilžu varianti: 1-Konkūrs; 2-Iejāde; 3-Kross: ")) #paprasa aptaujas veicējam ievadīt atbildi
             f.write("Lietotājs ievadīja" + str(k) + "\n") #str(k)-datu tips, kas parāda tekstu, ko ievadīja lietotājs
             if k == 1: #skaita atbildes
-                ko += 1
+                    ko += 1
             elif k == 2:
-                ie += 1
+                    ie += 1
             else:
-                kr += 1
+                    kr += 1
 
             print()
-           
-                   
+            
+                    
             print("2.Vai tavs zirgs izbauda disciplīnu, kurā trenējaties?")
             f.write("2.Vai tavs zirgs izbauda disciplīnu, kurā trenējaties?" + "\n")
             d = int(input("Atbildžu varianti: 1-Jā; 2-Nē; 3-Nezinu: "))
             f.write("Lietotājs ievadīja" + str(d) + "\n")
             if d == 1:
-                ko += 1
+                    ko += 1
             elif d == 2:
-                ie += 1
+                    ie += 1
             else:
-                kr += 1
+                    kr += 1
 
             print()
 
@@ -183,24 +178,24 @@ def main():
 
     def funkcija2():
         if ie < ko > kr: #nosaka, kuru atbilžu variantu skaitļu bija visvairāk
-            print("Piemērotāka disciplīna tavam zirgam ir konkūrs!")
-            f.write("Piemērotāka disciplīna tavam zirgam ir konkūrs!" + "\n")
+                    print("Piemērotāka disciplīna tavam zirgam ir konkūrs!")
+                    f.write("Piemērotāka disciplīna tavam zirgam ir konkūrs!" + "\n")
         elif kr < ie > ko:
-            print("Piemērotāka disciplīna tavam zirgam ir iejāde!")
-            f.write("Piemērotāka disciplīna tavam zirgam ir iejāde!" + "\n")
+                    print("Piemērotāka disciplīna tavam zirgam ir iejāde!")
+                    f.write("Piemērotāka disciplīna tavam zirgam ir iejāde!" + "\n")
         else:
-            print("Piemērotāka disciplīna tavam zirgam ir kross!")
-            f.write("Piemērotāka disciplīna tavam zirgam ir kross!" + "\n")
+                    print("Piemērotāka disciplīna tavam zirgam ir kross!")
+                    f.write("Piemērotāka disciplīna tavam zirgam ir kross!" + "\n")
 
     funkcija2()
 
-
+    print()
 
 
     print("Vai ir nepieciešams izstrādāt treniņu plānu divām nedēļām un atbilstošo barību?")
     f.write("Vai ir nepieciešams izstrādāt treniņu plānu mēnesim un atbilstošo barību?" + "\n")
     y = int(input("Atbilžu varianti: 1-Jā; 2-Nē: " ))
-    f.write("Lietotājs ievadīja" + str(c) + "\n")
+    f.write("Lietotājs ievadīja" + str(y) + "\n")
 
     konk = {"Ieteicamā barība: Augstas kvalitātes siens, granulas, musli, vitamīni-olbaltumvielas, kalcijs, fosfors. "}
     magn= ["Brokastīs pievieno magniju."]
@@ -313,6 +308,8 @@ def main():
     kro[2][6] = "Viegls skrējiens, lecieni"
     kro[2][7] = "Izturības skrējiens"
 
+    print()
+
 
     def funkcija3():
         if y == 2:
@@ -344,6 +341,7 @@ def main():
 
     funkcija3()
 
+    print()
 
     zirgs = { #info par zirgu
         "Vārds" : "Latte",
@@ -366,7 +364,7 @@ def main():
     print("Vai Jums būs nepieciešams vēl viens treniņu zirgs?") 
     f.write("Vai Jums būs nepieciešams vēl viens treniņu zirgs?" + "\n")
     o = int(input("Atbilžu varianti: 1-Jā; 2-Nē: " ))
-    f.write("Lietotājs ievadīja" + str(c) + "\n")
+    f.write("Lietotājs ievadīja" + str(o) + "\n")
     if o == 2: 
         print()
     elif o == 1: #izvada aprakstu par zirgu un zirga ēdināšanas grafiku
@@ -401,7 +399,6 @@ def main():
         main()
     else:
         print("Paldies, ka izpildījāt aptauju!")
-        f.write("Lietotājs ievadīja" + str(c) + "\n")
         exit()
 
 main()
