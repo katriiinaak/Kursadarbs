@@ -6,8 +6,7 @@ import fukcijas
 3. Atkarībā no testa rezultāta, atbilstošajai disciplīnai, tiek piedāvāts izstrādāt treniņu plānu un atbilstošu barību. 
 tiek piedavats treninu zirgs atbilstošajai disciplīnai: zirga apraksts
 """
-#z = 0
-#while z == 0:
+
 def main():
     
     MAPE = "faili/" #uztaisu mainīgo, kas ir fails
@@ -127,7 +126,7 @@ def main():
             f.write("8.Kā tavs zirgs uzvedas aplokā?" + "\n")
             b = int(input("Atbilžu varianti: 1-Pastaigājas, lēkā pa aploku; 2-Atkārto kustības, ko esi mācījis; 3-Nepārtraukti skrien: "))
             f.write("Lietotājs ievadīja" + str(b) + "\n")
-            try: #nodrošina datu ievades pareizību
+            try:#nodrošina datu ievades pareizību
                 print(b)
             except:
                 print("Atbildes numurs, ko ievadījāt, nav definēts!")
@@ -365,9 +364,9 @@ def main():
 
     print()
 
-    print("Vai Jums būs nepieciešams vēl viens treniņu zirgs?") #uzdod pēdējo jautājumu
+    print("Vai Jums būs nepieciešams vēl viens treniņu zirgs?") 
     o = int(input("Atbilžu varianti: 1-Jā; 2-Nē: " ))
-    if o == 2: #pabeidz aptauju
+    if o == 2: 
         print()
     elif o == 1: #izvada aprakstu par zirgu un zirga ēdināšanas grafiku
         print(zirgs)
