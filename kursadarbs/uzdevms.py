@@ -2,9 +2,8 @@ import fukcijas
 
 """
 1. Atbildēt uz jautājumiem par savu zirgu.
-2.Testa beigās uzzinās, kura disciplīna ir piemērotāka tavam zirgam.
+2. Testa beigās uzzinās, kura disciplīna ir piemērotāka tavam zirgam.
 3. Atkarībā no testa rezultāta, atbilstošajai disciplīnai, tiek piedāvāts izstrādāt treniņu plānu un atbilstošu barību. 
-tiek piedavats treninu zirgs atbilstošajai disciplīnai: zirga apraksts
 """
 
 def main():
@@ -201,6 +200,7 @@ def main():
     print("Vai ir nepieciešams izstrādāt treniņu plānu divām nedēļām un atbilstošo barību?")
     f.write("Vai ir nepieciešams izstrādāt treniņu plānu mēnesim un atbilstošo barību?" + "\n")
     y = int(input("Atbilžu varianti: 1-Jā; 2-Nē: " ))
+    f.write("Lietotājs ievadīja" + str(c) + "\n")
 
     konk = {"Ieteicamā barība: Augstas kvalitātes siens, granulas, musli, vitamīni-olbaltumvielas, kalcijs, fosfors. "}
     magn= ["Brokastīs pievieno magniju."]
@@ -315,10 +315,10 @@ def main():
 
 
     def funkcija3():
-        if y == 2: #ja atbildēja 'nē', tad uzdod vēl vienu jautājumu
+        if y == 2:
             print("Atbildiet uz vēl vienu jautājumu!")
             f.write("Atbildiet uz vēl vienu jautājumu!" + "\n")
-        elif y == 1: #ja atbildēja 'jā', tad izvada atbilstošo sarakstu
+        elif y == 1: 
             if ie < ko > kr: 
                 for i in range(rindas): #sarakstu izvada kā tabulu
                     for j in range(kolonas):
@@ -364,16 +364,20 @@ def main():
     print()
 
     print("Vai Jums būs nepieciešams vēl viens treniņu zirgs?") 
+    f.write("Vai Jums būs nepieciešams vēl viens treniņu zirgs?" + "\n")
     o = int(input("Atbilžu varianti: 1-Jā; 2-Nē: " ))
+    f.write("Lietotājs ievadīja" + str(c) + "\n")
     if o == 2: 
         print()
     elif o == 1: #izvada aprakstu par zirgu un zirga ēdināšanas grafiku
         print(zirgs)
         print(f"Ēdināšanas grafiks: Jādod auzas {bariba['auzas']}, siens {bariba['siens']}, musli {bariba['musli']} un vitamīni {bariba['vitamīni']}. ")
+        f.write("fĒdināšanas grafiks: Jādod auzas {bariba['auzas']}, siens {bariba['siens']}, musli {bariba['musli']} un vitamīni {bariba['vitamīni']}. " + "\n")
 
     print()
 
     print("Jums ir iespēja laimēt loterijā. Noteikumi: programma ģenerē random skaitļus, līdz kamēr tas ir 7. Ja izvada 5 skaitļus un vairāk, tad Jūs laimējat zirgu gardumus! Ja izvada 4 skaitļus un mazāk, tad diemžēl neko nelaimējāt. ")
+    f.write("Jums ir iespēja laimēt loterijā. Noteikumi: programma ģenerē random skaitļus, līdz kamēr tas ir 7. Ja izvada 5 skaitļus un vairāk, tad Jūs laimējat zirgu gardumus! Ja izvada 4 skaitļus un mazāk, tad diemžēl neko nelaimējāt. " + "\n")
     
     print()
     
@@ -386,15 +390,18 @@ def main():
         x = random.randint(0,10)  #izvēlas jaunus skaitļus līdz kamēr tas ir 7
 
     print("Tika atrasts {0}.  Ja pēc noteikumiem laimējāt balvu, tad attiecīgi sazināsimies ar Jums caur e-pastu.".format(y))
+    f.write("Tika atrasts {0}.  Ja pēc noteikumiem laimējāt balvu, tad attiecīgi sazināsimies ar Jums caur e-pastu.format(y)" + "\n")
 
     print()
 
 
     Repeat = input("Vai Jūs vēlaties izpildīt aptauju vēlreiz? Atbilžu varianti: Jā vai Nē ")
+    f.write("Vai Jūs vēlaties izpildīt aptauju vēlreiz? Atbilžu varianti: Jā vai Nē " + "\n")
     if Repeat == "Jā":
         main()
     else:
         print("Paldies, ka izpildījāt aptauju!")
+        f.write("Lietotājs ievadīja" + str(c) + "\n")
         exit()
 
 main()
