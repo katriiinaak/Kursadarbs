@@ -23,8 +23,7 @@ def main():
         for i in range(12):
               print("1.Kādā disciplīnā Jūs šobrīd trenējaties?")
               f.write("1.Kādā discpilīnā Jūs šobrīd trenējaties?" + "\n")  # pievieno tekstu uz aptaujas failu (\n-pievieno jaunu teikumu nākamajā rindiņā)
-              k = int(
-                  input("Atbilžu varianti: 1-Konkūrs; 2-Iejāde; 3-Kross: "))  # paprasa aptaujas veicējam ievadīt atbildi
+              k = int(input("Atbilžu varianti: 1-Konkūrs; 2-Iejāde; 3-Kross: "))  # paprasa aptaujas veicējam ievadīt atbildi
               f.write("Lietotājs ievadīja" + str(k) + "\n")  # str(k)-datu tips, kas parāda tekstu, ko ievadīja lietotājs
               if k == 1:  # skaita atbildes
                   ko += 1
@@ -32,9 +31,9 @@ def main():
                   ie += 1
               else:
                   kr += 1
-        
+
               print()
-        
+
               print("2.Vai Jūsu zirgs izbauda disciplīnu, kurā trenējaties?")
               f.write("2.Vai Jūsu zirgs izbauda disciplīnu, kurā trenējaties?" + "\n")
               d = int(input("Atbildžu varianti: 1-Jā; 2-Nē; 3-Nezinu: "))
@@ -45,9 +44,9 @@ def main():
                   ie += 1
               else:
                   kr += 1
-        
+
               print()
-        
+
               print("3.Kādā šķirnes grupā ir Jūsu zirgs?")
               f.write("3.Kādā šķirnes grupā ir Jūsu zirgs?" + "\n")
               e = int(input("Atbilžu varianti: 1-Siltasiņu(piem.Hanoveras, Holšteinas, Latvijas); 2-Aukstasiņu(piem.Frīzs, Šīres); 3-Karstasiņu(piem.Arābs, tīrasiņu): "))
@@ -58,9 +57,9 @@ def main():
                   ie += 1
               else:
                   kr += 1
-        
+
               print()
-        
+
               print("4.Cik vecs ir zirgs?")
               f.write("4.Cik vecs ir zirgs?" + "\n")
               m = int(input("Atbilžu varianti: 1-3-7 gadi; 2-7-14 gadi; 3-14+ gadi: "))
@@ -71,9 +70,9 @@ def main():
                   ie += 1
               else:
                   kr += 1
-        
+
               print()
-        
+
               print("5.Zirga dzimums?")
               f.write("5.Zirga dzimums?" + "\n")
               l = int(input("Atbilžu varianti: 1-Ķēve; 2-Kastrāts; 3-Ērzelis: "))
@@ -84,9 +83,9 @@ def main():
                   ie += 1
               else:
                   kr += 1
-        
+
               print()
-        
+
               print("6.Kāda ir zirga ķermeņa masa?")
               f.write("6.Kāda ir zirga ķermeņa masa?" + "\n")
               c = int(input("Atbilžu varianti: 1-Ideāli sportiska forma, skaisti muskuļains; 2-Tievs, garām kājām; 3-Apaļīgs, masīvs, lieli muskuļi: "))
@@ -97,9 +96,9 @@ def main():
                   ie += 1
               else:
                   kr += 1
-        
+
               print()
-        
+
               print("7.Kāds ir zirga raksturs?")
               f.write("7.Kāds ir zirga raksturs?" + "\n")
               r = int(input("Atbilžu varianti: 1-Traks, nepacietīgs, sportisks; 2-Nosvērts, mierīgs, gudrs, graciozs; 3-Ātrs, enerģisks, veikls: "))
@@ -110,33 +109,18 @@ def main():
                   ie += 1
               else:
                   kr += 1
-        
+
               print()
-        
+
               print("8.Kā Jūsu zirgs uzvedas aplokā?")
               f.write("8.Kā Jūsu zirgs uzvedas aplokā?" + "\n")
-              b = 1, 2, 3
               b = int(input("Atbilžu varianti: 1-Pastaigājas, lēkā pa aploku; 2-Atkārto kustības, ko esi mācījis; 3-Nepārtraukti skrien: "))
               f.write("Lietotājs ievadīja" + str(b) + "\n")
-<<<<<<< HEAD
-              b = 1, 2, 3
-              if 0 > b > 3:
-                raise Exception("Sorry, no numbers below zero")
-=======
-              try:
+              try:  # nodrošina datu ievades pareizību
                   print(b)
               except:
-                  print("Mainīgais kuru mēģinat izvadīt nav definēts!")
-
-              #b = 1, 2, 3
-              #if 0 > b > 3:
-              #  raise Exception("Sorry, no numbers below zero")
->>>>>>> fdffa2370eebdb5e3c71cc3649e50b04650f4c65
-              #try:  # nodrošina datu ievades pareizību
-                  #print(b)
-              #except:
-              #print("Atbildes numurs, ko ievadījāt, nav definēts!")
-              #f.write("Atbildes numurs, ko ievadījāt, nav definēts!" + "\n")
+                  print("Atbildes numurs, ko ievadījāt, nav definēts!")
+                  f.write("Atbildes numurs, ko ievadījāt, nav definēts!" + "\n")
               if b == 1:
                   ko += 1
               elif b == 2:
@@ -145,7 +129,7 @@ def main():
                   kr += 1
 
               print()
-        
+
               print("9.Kādā ātrumā Jūsu zirgam patīk piedalīties treniņos, sacensībās?")
               f.write("9.Kādā ātrumā Jūsu zirgam patīk piedalīties treniņos, sacensībās?" + "\n")
               s = int(input("Atbilžu varianti: 1-Vidēji; 2-Pielāgojas man; 3-Ātri: "))
@@ -156,9 +140,9 @@ def main():
                   ie += 1
               else:
                   kr += 1
-        
+
               print()
-        
+
               print("10.Vai zirgs baidās no priekšmetiem, lietām vai citiem zirgiem?")
               f.write("10.Vai zirgs baidās no priekšmetiem, lietām vai citiem zirgiem?" + "\n")
               h = int(input("Atbilžu varianti: 1-Dažreiz; 2-Jā; 3-Nē: "))
@@ -169,9 +153,9 @@ def main():
                   ie += 1
               else:
                   kr += 1
-        
+
               print()
-        
+
               print("11.Kāda veida treniņus Jūsu zirgs vairāk patīk?")
               f.write("11.Kāda veida treniņus Jūsu zirgs vairāk patīk?" + "\n")
               n = int(input("Atbilžu varianti: 1-Lekšana; 2-Figūru izpilde; 3-Izturības treniņi: "))
@@ -248,7 +232,6 @@ def main():
 
     ieja.update(muslim)
 
-
     rindas, kolonas = 3, 8
     iej = [[None] * kolonas for i in range(rindas)]
 
@@ -310,7 +293,6 @@ def main():
     kro[2][5] = "Hordošana 20min"
     kro[2][6] = "Viegls skrējiens, lecieni"
     kro[2][7] = "Izturības skrējiens"
-
 
     print()
 
@@ -401,7 +383,7 @@ def main():
 
     print()
 
-    Repeat = input("Vai Jūs vēlaties izpildīt aptauju vēlreiz? Atbilžu varianti: Jā vai Nē ")
+    Repeat = input("Vai Jūs vēlaties izpildīt aptauju vēlreiz? Atbilžu varianti: 1-Jā; 2-Nē ")
     f.write("Vai Jūs vēlaties izpildīt aptauju vēlreiz? Atbilžu varianti: 1-Jā; 2-Nē " + "\n")
     if Repeat == "1":
         main()
