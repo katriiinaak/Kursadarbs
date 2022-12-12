@@ -1,2 +1,9 @@
 07.12.2022.
-kodam nav aizsardzības pret nepareizu datu ievadi, 1,2,3 vietā mierīgi varu ievadīt citus ciparus, nevar ievādit burtus, tas labi
+- Kodam nav aizsardzības pret nepareizu datu ievadi, 1,2,3 vietā mierīgi varu ievadīt citus ciparus, nevar ievādit burtus, tas labi
+
+12.12.2022.
+- Koprojāmm nav datu aizsardzības, ievadot ari burtu viss nojūk
+- 2-Dimensionalos listus varētu pārvietot uz atsevišķu failu, lai galvanais kods būtu pārskatāmāks / īsāks
+- Piemēram 40 - 51 rindai, tāda tipa sadaļas varētu ievietot def, un tad visus def salikt atsevišķā failā
+
+- Kods diezgan foršs, šur tur ir paskaidrojumi, kas palīdz labāk izprast kodu
