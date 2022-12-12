@@ -117,18 +117,21 @@ def main():
               f.write("8.Kā Jūsu zirgs uzvedas aplokā?" + "\n")
               b = int(input("Atbilžu varianti: 1-Pastaigājas, lēkā pa aploku; 2-Atkārto kustības, ko esi mācījis; 3-Nepārtraukti skrien: "))
               f.write("Lietotājs ievadīja" + str(b) + "\n")
-              try:  # nodrošina datu ievades pareizību
-                  print(b)
-              except:
-                  print("Atbildes numurs, ko ievadījāt, nav definēts!")
-                  f.write("Atbildes numurs, ko ievadījāt, nav definēts!" + "\n")
+              b = 1, 2, 3
+              if 0 > b > 3:
+                raise Exception("Sorry, no numbers below zero")
+              #try:  # nodrošina datu ievades pareizību
+                  #print(b)
+              #except:
+              #print("Atbildes numurs, ko ievadījāt, nav definēts!")
+              #f.write("Atbildes numurs, ko ievadījāt, nav definēts!" + "\n")
               if b == 1:
                   ko += 1
               elif b == 2:
                   ie += 1
               else:
                   kr += 1
-        
+
               print()
         
               print("9.Kādā ātrumā Jūsu zirgam patīk piedalīties treniņos, sacensībās?")
@@ -199,7 +202,6 @@ def main():
 
     konk.update(musli)
 
-    print(konk)
 
     rindas, kolonas = 3, 8  # parāda cik rindu un kolonu būs sarakstā
     kon = [[None] * kolonas for i in range(rindas)]  # uztaisa tukšu tabulu, lai pēctam ievadītu datus tajā
@@ -234,7 +236,6 @@ def main():
 
     ieja.update(muslim)
 
-    print(ieja)
 
     rindas, kolonas = 3, 8
     iej = [[None] * kolonas for i in range(rindas)]
@@ -269,7 +270,6 @@ def main():
 
     kros.update(auzas)
 
-    print(kros)
 
     rindas, kolonas = 3, 8
     kro = [[None] * kolonas for i in range(rindas)]
@@ -298,6 +298,7 @@ def main():
     kro[2][5] = "Hordošana 20min"
     kro[2][6] = "Viegls skrējiens, lecieni"
     kro[2][7] = "Izturības skrējiens"
+
 
     print()
 
@@ -389,8 +390,8 @@ def main():
     print()
 
     Repeat = input("Vai Jūs vēlaties izpildīt aptauju vēlreiz? Atbilžu varianti: Jā vai Nē ")
-    f.write("Vai Jūs vēlaties izpildīt aptauju vēlreiz? Atbilžu varianti: Jā vai Nē " + "\n")
-    if Repeat == "Jā":
+    f.write("Vai Jūs vēlaties izpildīt aptauju vēlreiz? Atbilžu varianti: 1-Jā; 2-Nē " + "\n")
+    if Repeat == "1":
         main()
     else:
         print("Paldies, ka izpildījāt aptauju!")

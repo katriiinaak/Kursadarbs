@@ -1,0 +1,18 @@
+'Tests par zirgu'
+Sveiki! Atbildot uz jautājumiem, uzzināsiet, kura disciplīna ir piemērotāka Jūsu zirgam!!
+1.Kādā discpilīnā Jūs šobrīd trenējaties?
+Lietotājs ievadīja2
+2.Vai Jūsu zirgs izbauda disciplīnu, kurā trenējaties?
+Lietotājs ievadīja2
+3.Kādā šķirnes grupā ir Jūsu zirgs?
+Lietotājs ievadīja2
+4.Cik vecs ir zirgs?
+Lietotājs ievadīja2
+5.Zirga dzimums?
+Lietotājs ievadīja2
+6.Kāda ir zirga ķermeņa masa?
+Lietotājs ievadīja2
+7.Kāds ir zirga raksturs?
+Lietotājs ievadīja2
+8.Kā Jūsu zirgs uzvedas aplokā?
+Lietotājs ievadīja5
