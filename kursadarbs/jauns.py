@@ -115,11 +115,17 @@ def main():
         
               print("8.Kā Jūsu zirgs uzvedas aplokā?")
               f.write("8.Kā Jūsu zirgs uzvedas aplokā?" + "\n")
+              b = 1, 2, 3
               b = int(input("Atbilžu varianti: 1-Pastaigājas, lēkā pa aploku; 2-Atkārto kustības, ko esi mācījis; 3-Nepārtraukti skrien: "))
               f.write("Lietotājs ievadīja" + str(b) + "\n")
-              b = 1, 2, 3
-              if 0 > b > 3:
-                raise Exception("Sorry, no numbers below zero")
+              try:
+                  print(b)
+              except:
+                  print("Mainīgais kuru mēģinat izvadīt nav definēts!")
+
+              #b = 1, 2, 3
+              #if 0 > b > 3:
+              #  raise Exception("Sorry, no numbers below zero")
               #try:  # nodrošina datu ievades pareizību
                   #print(b)
               #except:
