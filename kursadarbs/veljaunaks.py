@@ -25,15 +25,6 @@ def main():
               f.write("1.Kādā discpilīnā Jūs šobrīd trenējaties?" + "\n")  # pievieno tekstu uz aptaujas failu (\n-pievieno jaunu teikumu nākamajā rindiņā)
               k = int(input("Atbilžu varianti: 1-Konkūrs; 2-Iejāde; 3-Kross: "))  # paprasa aptaujas veicējam ievadīt atbildi
               f.write("Lietotājs ievadīja" + str(k) + "\n")  # str(k)-datu tips, kas parāda tekstu, ko ievadīja lietotājs
-              if (k == 1):
-                print("Jūs izvēlējāties atbildi 1!")
-              elif (k == 2):
-                print("Jūs izvēlējāties atbildi 2!")
-              elif (k == 3):
-                print("Jūs izvēlējāties atbildi 3!")
-              else:
-                print("Šāda atbilde nav iespējama!")
-                raise SystemExit
               if k == 1:  # skaita atbildes
                   ko += 1
               elif k == 2:
@@ -47,15 +38,6 @@ def main():
               f.write("2.Vai Jūsu zirgs izbauda disciplīnu, kurā trenējaties?" + "\n")
               d = int(input("Atbildžu varianti: 1-Jā; 2-Nē; 3-Nezinu: "))
               f.write("Lietotājs ievadīja" + str(d) + "\n")
-              if (d == 1):
-                print("Jūs izvēlējāties atbildi 1!")
-              elif (d == 2):
-                print("Jūs izvēlējāties atbildi 2!")
-              elif (d == 3):
-                print("Jūs izvēlējāties atbildi 3!")
-              else:
-                print("Šāda atbilde nav iespējama!")
-                raise SystemExit
               if d == 1:
                   ko += 1
               elif d == 2:
@@ -69,15 +51,6 @@ def main():
               f.write("3.Kādā šķirnes grupā ir Jūsu zirgs?" + "\n")
               e = int(input("Atbilžu varianti: 1-Siltasiņu(piem.Hanoveras, Holšteinas, Latvijas); 2-Aukstasiņu(piem.Frīzs, Šīres); 3-Karstasiņu(piem.Arābs, tīrasiņu): "))
               f.write("Lietotājs ievadīja" + str(e) + "\n")
-              if (e == 1):
-                print("Jūs izvēlējāties atbildi 1!")
-              elif (e == 2):
-                print("Jūs izvēlējāties atbildi 2!")
-              elif (e == 3):
-                print("Jūs izvēlējāties atbildi 3!")
-              else:
-                print("Šāda atbilde nav iespējama!")
-                raise SystemExit
               if e == 1:
                   ko += 1
               elif e == 2:
@@ -91,15 +64,6 @@ def main():
               f.write("4.Cik vecs ir zirgs?" + "\n")
               m = int(input("Atbilžu varianti: 1-3-7 gadi; 2-7-14 gadi; 3-14+ gadi: "))
               f.write("Lietotājs ievadīja" + str(m) + "\n")
-              if (m == 1):
-                print("Jūs izvēlējāties atbildi 1!")
-              elif (m == 2):
-                print("Jūs izvēlējāties atbildi 2!")
-              elif (m == 3):
-                print("Jūs izvēlējāties atbildi 3!")
-              else:
-                print("Šāda atbilde nav iespējama!")
-                raise SystemExit
               if m == 1:
                   ko += 1
               elif m == 2:
@@ -113,15 +77,6 @@ def main():
               f.write("5.Zirga dzimums?" + "\n")
               l = int(input("Atbilžu varianti: 1-Ķēve; 2-Kastrāts; 3-Ērzelis: "))
               f.write("Lietotājs ievadīja" + str(l) + "\n")
-              if (l == 1):
-                print("Jūs izvēlējāties atbildi 1!")
-              elif (l == 2):
-                print("Jūs izvēlējāties atbildi 2!")
-              elif (l == 3):
-                print("Jūs izvēlējāties atbildi 3!")
-              else:
-                print("Šāda atbilde nav iespējama!")
-                raise SystemExit
               if l == 1:
                   ko += 1
               elif l == 2:
@@ -135,15 +90,6 @@ def main():
               f.write("6.Kāda ir zirga ķermeņa masa?" + "\n")
               c = int(input("Atbilžu varianti: 1-Ideāli sportiska forma, skaisti muskuļains; 2-Tievs, garām kājām; 3-Apaļīgs, masīvs, lieli muskuļi: "))
               f.write("Lietotājs ievadīja" + str(c) + "\n")
-              if (c == 1):
-                print("Jūs izvēlējāties atbildi 1!")
-              elif (c == 2):
-                print("Jūs izvēlējāties atbildi 2!")
-              elif (c == 3):
-                print("Jūs izvēlējāties atbildi 3!")
-              else:
-                print("Šāda atbilde nav iespējama!")
-                raise SystemExit
               if c == 1:
                   ko += 1
               elif c == 2:
@@ -157,15 +103,6 @@ def main():
               f.write("7.Kāds ir zirga raksturs?" + "\n")
               r = int(input("Atbilžu varianti: 1-Traks, nepacietīgs, sportisks; 2-Nosvērts, mierīgs, gudrs, graciozs; 3-Ātrs, enerģisks, veikls: "))
               f.write("Lietotājs ievadīja" + str(r) + "\n")
-              if (r == 1):
-                print("Jūs izvēlējāties atbildi 1!")
-              elif (r == 2):
-                print("Jūs izvēlējāties atbildi 2!")
-              elif (r == 3):
-                print("Jūs izvēlējāties atbildi 3!")
-              else:
-                print("Šāda atbilde nav iespējama!")
-                raise SystemExit
               if r == 1:
                   ko += 1
               elif r == 2:
@@ -179,23 +116,6 @@ def main():
               f.write("8.Kā Jūsu zirgs uzvedas aplokā?" + "\n")
               b = int(input("Atbilžu varianti: 1-Pastaigājas, lēkā pa aploku; 2-Atkārto kustības, ko esi mācījis; 3-Nepārtraukti skrien: "))
               f.write("Lietotājs ievadīja" + str(b) + "\n")
-<<<<<<< HEAD:kursadarbs/jauns.py
-              if (b == 1):
-                print("Jūs izvēlējāties atbildi 1!")
-              elif (b == 2):
-                print("Jūs izvēlējāties atbildi 2!")
-              elif (b == 3):
-                print("Jūs izvēlējāties atbildi 3!")
-              else:
-                print("Šāda atbilde nav iespējama!")
-                raise SystemExit
-=======
-              try:  # nodrošina datu ievades pareizību
-                  print(b)
-              except:
-                  print("Atbildes numurs, ko ievadījāt, nav definēts!")
-                  f.write("Atbildes numurs, ko ievadījāt, nav definēts!" + "\n")
->>>>>>> ffca86da0eb2525f52574ae26a7576edff9ace3c:kursadarbs/veljaunaks.py
               if b == 1:
                   ko += 1
               elif b == 2:
@@ -209,15 +129,6 @@ def main():
               f.write("9.Kādā ātrumā Jūsu zirgam patīk piedalīties treniņos, sacensībās?" + "\n")
               s = int(input("Atbilžu varianti: 1-Vidēji; 2-Pielāgojas man; 3-Ātri: "))
               f.write("Lietotājs ievadīja" + str(s) + "\n")
-              if (s == 1):
-                print("Jūs izvēlējāties atbildi 1!")
-              elif (s == 2):
-                print("Jūs izvēlējāties atbildi 2!")
-              elif (s == 3):
-                print("Jūs izvēlējāties atbildi 3!")
-              else:
-                print("Šāda atbilde nav iespējama!")
-                raise SystemExit
               if s == 1:
                   ko += 1
               elif s == 2:
@@ -231,15 +142,6 @@ def main():
               f.write("10.Vai zirgs baidās no priekšmetiem, lietām vai citiem zirgiem?" + "\n")
               h = int(input("Atbilžu varianti: 1-Dažreiz; 2-Jā; 3-Nē: "))
               f.write("Lietotājs ievadīja" + str(h) + "\n")
-              if (h == 1):
-                print("Jūs izvēlējāties atbildi 1!")
-              elif (h == 2):
-                print("Jūs izvēlējāties atbildi 2!")
-              elif (h == 3):
-                print("Jūs izvēlējāties atbildi 3!")
-              else:
-                print("Šāda atbilde nav iespējama!")
-                raise SystemExit
               if h == 1:
                   ko += 1
               elif h == 2:
@@ -253,15 +155,6 @@ def main():
               f.write("11.Kāda veida treniņus Jūsu zirgs vairāk patīk?" + "\n")
               n = int(input("Atbilžu varianti: 1-Lekšana; 2-Figūru izpilde; 3-Izturības treniņi: "))
               f.write("Lietotājs ievadīja" + str(n) + "\n")
-              if (n == 1):
-                print("Jūs izvēlējāties atbildi 1!")
-              elif (n == 2):
-                print("Jūs izvēlējāties atbildi 2!")
-              elif (n == 3):
-                print("Jūs izvēlējāties atbildi 3!")
-              else:
-                print("Šāda atbilde nav iespējama!")
-                raise SystemExit
               if n == 1:
                   ko += 1
               elif n == 2:

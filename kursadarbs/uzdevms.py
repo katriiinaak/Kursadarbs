@@ -201,9 +201,6 @@ def main():
     musli = ["Brokastīs pievieno musli."]
 
     konk.update(musli)
-
-    print(konk)
-
     
 
     rindas, kolonas = 3, 8 #parāda cik rindu un kolonu būs sarakstā
@@ -240,7 +237,6 @@ def main():
 
     ieja.update(muslim)
 
-    print(ieja)
 
 
     rindas, kolonas = 3, 8
@@ -277,8 +273,6 @@ def main():
     auzas = ["Pusdienās pievieno auzas."]
     
     kros.update(auzas)
-    
-    print(kros)
 
 
 
